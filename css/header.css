@@ -104,8 +104,8 @@ section.home-top .scroll-to-icon {
   header {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
-    -ms-grid-rows: 200px auto;
-        grid-template-rows: 200px auto;
+    -ms-grid-rows: 150px auto;
+        grid-template-rows: 150px auto;
   }
   header .content {
     grid-column: 1/-1;
