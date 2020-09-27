@@ -81,7 +81,7 @@ section.home-top .scroll-to-icon {
   //<30%
   header {
     grid-template-columns: 1fr;
-    grid-template-rows: 150px auto;
+    grid-template-rows: 80vmin;
     .content {
       grid-column: 1/-1;
       grid-row: 2/-1;

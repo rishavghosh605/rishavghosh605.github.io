@@ -44,7 +44,7 @@ section {
       padding: 5px 0;
     }
     .name {
-      padding: 3px 0;
+      padding: 3px 2px;//2px so that when cards are very small content does not stick to edges
     }
     .call-to-action {
       margin-top: 10px;
