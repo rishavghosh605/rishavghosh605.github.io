@@ -1,0 +1,20 @@
+$bold-text-color: #0f141e;
+
+.special{
+    color: $bold-text-color;
+    line-height: 1;
+    display: inline-block;
+    &::after{
+        height: 1px;
+        border-bottom: 2px solid #0f141e;
+        display: block;
+        width: 100%;
+        content: '';
+        transition: opacity .2s linear;
+        opacity: 0;
+        transform: translate(0,100%);
+    }
+    &:hover::after{
+        opacity: 1;        
+    }
+  }

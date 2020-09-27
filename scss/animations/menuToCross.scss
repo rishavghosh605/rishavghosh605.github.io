@@ -1,0 +1,51 @@
+.change {
+  .menu-text {
+    display: none;
+  }
+  .close {
+    display: block;
+    font-size: 1rem;
+    // transition: all 5s ease-in-out;
+  }
+  body {
+    overflow: hidden;
+  }
+}
+.change .bar1 {
+  // transform: rotate(-45deg) translate(-3px, 4px);
+  top: 3px;
+  // width: 25px;
+  transform: rotate(135deg);
+}
+
+.change .bar2 {
+  transform: translateX(-15px);
+  opacity: 0;
+}
+
+.change .bar3 {
+  top:3px;
+  // width: 25px;
+  transform: rotate(-135deg);
+  // transform: rotate(45deg) translate(-8px, -8px);
+  // width: 25px;
+}
+
+// -----------Media Queries-----------
+@media screen and (max-width: 1024px) {
+  .change .bar3 {
+    // transform: rotate(45deg) translate(-6px, -7px);
+    top: 3pxpx;
+    // width: 25px;
+    transform: rotate(-135deg);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .menu-text {
+    display: none;
+  }
+  .change .close {
+    display: none;
+  }
+}

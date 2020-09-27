@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono:400,400i|IBM+Plex+Sans+Condensed:400,400i|IBM+Plex+Sans:100,100i,400,400i,700,700i|IBM+Plex+Serif:400,400i&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/global-layout.css" />
+    <link rel="stylesheet" href="css/typography.css" />
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/projects.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/navbar.css" />
+    <link rel="stylesheet" href="css/menu.css" />
+
+    <link rel="stylesheet" href="css/menuToCross.css" />
+    <link rel="stylesheet" href="css/scrollDown.css" />
+    <link rel="stylesheet" href="css/scrollTop.css" />
+    <link rel="stylesheet" href="css/overlayEffect.css" />
+    <link rel="stylesheet" href="css/highlightElements.css" />
+    <link rel="stylesheet" href="css/newIconCircle.css" />
+
+    <title>Portfolio | Rishav Ghosh - Full Stack Developer</title>
+  </head>
+  <body>
+    <div class="overlay-menu" id="overlay-content">
+      <div class="menu-list">
+        <h5>Menu</h5>
+        <div class="my-projects">Projects</div>
+        <div class="about">About me</div>
+        <div class="contactme">Contact</div>
+        <div class="instagram">Instagram</div>
+        <div class="dribbble">Dribbble</div>
+        <!-- <div class="behance">Behance</div> -->
+      </div>
+    </div>
+    <nav class="navbar" id="nav">
+      <div class="logo">
+        <a href="/" class="internal" data-page="home">
+          <img class = "selection-logo" src="./assets/svg/BigLogo.svg" alt="My Logo">
+          <img class = "hover-logo" src="./assets/svg/HoverLogo.svg" alt="My Logo">
+        </a>
+      </div>
+      <div class="menu" onclick="menuToCross(this)">
+        <div class="menu-text">Menu</div>
+        <div class="menu-text close">CLOSE</div>
+        <div class="menu-icon">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+        </div>
+      </div>
+    </nav>
+    <div class="container">
+      <header id="top-content">
+        <div class="content">
+          <h5>Rishav Ghosh</h5>
+          <h1 class="large">Backend developer and cloud enthusiast</h1>
+          <h3 class="header-light">
+            My undying passion for new tech and development drives me to expand
+            my knowledge and experience everyday.<br />
+            I want to work with big comapnies and up-and-coming startups to
+            successfully help them reach their full potential.
+          </h3>
+          <nav class="links">
+            <h4><a href="#portfolio" class="special">View Projects</a></h4>
+            <span>or</span>
+            <h4><a href="about" class="special">Read About Me</a></h4>
+          </nav>
+        </div>
+        <div class="profile-image" id="head-image">
+          <img src="img/me.png" alt="" />
+        </div>
+        <div class="scroll-down-animation">
+          <a href="#portfolio" class="scroll-to">
+            <div class="scroll-to-icon"></div>
+          </a>
+        </div>
+      </header>
+
+      <a href="#" class="scroll-up" id="scroll-up-icon"><img src="./assets/svg/ScrollUpArrow.svg" alt=""/></a>
+      <section id="portfolio" class="projects">
+        <div class="content">
+          <div class="heading">
+            <h5>Selected Projects</h5>
+            <h1 class="large">Case Studies</h1>
+            <div>Lets see</div>
+          </div>
+          <div class="list">
+            <div class="list-item">
+              <div class="overlay-img"></div>
+              <div class="topic light">
+                <div class="date">2018-2019</div>
+                <div class="name">
+                  Basic UX — design resources for InVision Studio
+                  </div>
+                <div class="call-to-action">View Case Study
+                  <img class="cta-arrow"src="./assets/svg/ThinArrow.svg" alt="Arrow">
+                </div>                                
+              </div>
+              <!-- New Icon -->
+              <svg class="new-icon" width="58" height="58" viewBox="0 0 58 58" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path class="circle" d="M29 56.2602C44.0553 56.2602 56.26 44.0555 56.26 29.0002C56.26 13.945 44.0553 1.74023 29 1.74023C13.9447 1.74023 1.73999 13.945 1.73999 29.0002C1.73999 44.0555 13.9447 56.2602 29 56.2602Z" fill="black"/>
+                <path d="M21.9796 25.8385V33.6201H20.5011L16.6214 28.8955V33.6201H14.8427V25.8385H16.3324L20.201 30.563V25.8385H21.9796ZM30.1795 32.175V33.6201H24.1542V25.8385H30.035V27.2836H25.944V28.9734H29.5569V30.3741H25.944V32.175H30.1795ZM43.5988 25.8385L41.053 33.6201H39.1187L37.4068 28.3508L35.6392 33.6201H33.716L31.1592 25.8385H33.0268L34.7832 31.3079L36.6175 25.8385H38.285L40.0637 31.3523L41.8757 25.8385H43.5988Z" fill="white"/>
+              </svg> 
+              <img src="img/tile_basicux.jpg" alt="" />
+            </div>
+            <div class="list-item">
+              <div class="overlay-img"></div>
+              <div class="topic light">
+                <div class="date">2017</div>
+                <div class="name"
+                  >Triniso — responsive eCommerce website design</div
+                >
+                <div class="call-to-action">View Case Study
+                  <img class="cta-arrow"src="./assets/svg/ThinArrow.svg" alt="Arrow">
+                </div>
+              </div>
+              <img src="img/tile_lessdoing.jpg" alt="" />
+            </div>
+            <div class="list-item">
+              <div class="overlay-img"></div>
+              <div class="topic light">
+                <div class="date">2017</div>
+                <div class="name">Symova — responsive website design</div>
+                <div class="call-to-action">View Case Study
+                  <img class="cta-arrow"src="./assets/svg/ThinArrow.svg" alt="Arrow">
+                </div>
+              </div>
+              <img src="img/tile_pmr.jpg" alt="" />
+            </div>
+            <div class="list-item">
+              <div class="overlay-img"></div>
+              <div class="topic dark">
+                <div class="date">2016-2018</div>
+                <div class="name">PMR — online platform & website design</div>
+                <div class="call-to-action"
+                  >View Case Study
+                  <img class="cta-arrow"src="./assets/svg/ThinArrow.svg" alt="Arrow">
+                </div>
+              </div>
+              <img src="img/tile_symova.jpg" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer>
+        <div class="content">
+          <div class="info">
+            <div class="contact">
+              <h3>Contact <br />information&nbsp;—</h3>
+              <p>
+                Feel free to reach out to me any time. I prefer to talk over
+                email, especially since we may be a few time zones away.
+              </p>
+              <ul class="contact-links">
+                <li>
+                  E:
+                  <a class="special" href="mailto:damian.watracz@gmail.com">
+                    rishavghosh605@gmail.com
+                  </a>
+                </li>
+                <li>P: <span class="black">+91-877-727-8059</span></li>
+              </ul>
+            </div>
+            <div class="latest_projects">
+              <h3>Latest <br />projects&nbsp;—</h3>
+              <ul class="project-links">
+                <li
+                  ><a href="project/iceland" class="special internal"
+                    >Iceland</a
+                  ></li
+                >
+                <li
+                  ><a href="project/basicux" class="special internal"
+                    >Basic UX</a
+                  ></li
+                >
+                <li
+                  ><a href="project/triniso" class="special internal"
+                    >Triniso</a
+                  ></li
+                >
+                <li
+                  ><a href="project/symova" class="special internal"
+                    >Symova</a
+                  ></li
+                >
+                <li><a href="project/pmr" class="special internal">PMR</a></li>
+                <li><a href="/" class="special internal">All projects</a></li>
+              </ul>
+            </div>
+            <div class="availability">
+              <h3>Current <br />availability&nbsp;—</h3>
+              <p>
+                I usually work on several projects but I’ll be happy to discuss
+                new opportunities. Let’s get in touch!
+              </p>
+            </div>
+            <div class="follow">
+              <h3>Follow <br />me on&nbsp;—</h3>
+              <ul class="social-links">
+                <li
+                  ><a
+                    href="https://dribbble.com/damianwatracz"
+                    class="special"
+                    target="_blank"
+                    >Dribbble</a
+                  ></li
+                >
+                <li
+                  ><a
+                    href="https://www.instagram.com/damianwatracz"
+                    class="special"
+                    target="_blank"
+                    >Instagram</a
+                  ></li
+                >
+                <li
+                  ><a
+                    href="https://www.behance.net/damianwatracz"
+                    class="special"
+                    target="_blank"
+                    >Behance</a
+                  ></li
+                >
+                <li
+                  ><a
+                    href="https://www.linkedin.com/in/rishavghosh605"
+                    class="special"
+                    target="_blank"
+                    >LinkedIn</a
+                  ></li
+                >
+              </ul>
+            </div>
+            <div class="copyright">
+              <a href="home" class="internal">
+                <img src="./assets/svg/FooterLogo.svg" alt=""/>
+              </a>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="/js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,205 @@
+// ---------------Global-----------------
+$normal-text-color: #878a8f;
+$bold-text-color: #0f141e;
+
+html {
+  font-family: sans-serif;
+  font-size: 16px; //In desktop mode I guess it depends on user but in general it will be 16px lets see if I will change it later
+}
+
+body {
+  // font-family: "Helvetica Now Display DW",sans-serif;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-style: normal;
+  line-height: 1.5625rem;
+  font-weight: 500;
+  letter-spacing: normal;
+  // color: #0f141e;
+}
+
+//-------------------Headings-------------------
+
+.h2,
+h1,
+h1.large,
+h2,
+h3 {
+  // font-family: "Helvetica Now Display DW",sans-serif;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: 800;
+  letter-spacing: -0.01em;
+  color: $bold-text-color;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+.large {
+  font-size: 4.5rem;
+  line-height: 4.6875rem;
+  padding-top: 1px;
+  padding-bottom: 4px;
+
+  + h3 {
+    margin-top: 20px;
+  }
+}
+
+h3 {
+  font-size: 1.375rem;
+  line-height: 1.875rem;
+  padding-top: 2px;
+  padding-bottom: 3px;
+  letter-spacing: normal;
+}
+
+h4 {
+  font-size: 1.125rem;
+  line-height: 1.5625rem;
+  padding-top: 1px;
+  padding-bottom: 4px;
+  font-weight: 800;
+  letter-spacing: normal;
+  color: $bold-text-color;
+}
+
+h5 {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  text-transform: uppercase;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-weight: 400;
+  letter-spacing: 0.4em;
+  color: $normal-text-color;
+
+  + .large {
+    margin-top: 15px;
+  }
+}
+
+.header-light {
+  font-weight: 500;
+  color: $normal-text-color;
+  letter-spacing: normal;
+}
+
+// -----------------------Links and Anchor Tags--------------
+.links {
+  margin-top: 20px;
+  display: block;
+  h4 {
+    display: inline-block;
+  }
+  span {
+    margin-left: 15px;
+    margin-right: 15px;
+    color: $normal-text-color;
+  }
+}
+
+a {
+  color: $normal-text-color;
+  text-decoration: none;
+}
+
+strong {
+  font-weight: 500;
+  color: #0f141e;
+}
+
+//footer typography
+
+h3 {
+  + p {
+    margin-top: 10px;
+  }
+}
+
+p {
+  margin: 0;
+  color: #878a8f;
+  font-weight: 500;
+  letter-spacing: 0.01em;
+  padding-top: 2px;
+  padding-bottom: 3px;
+}
+
+p.small {
+  font-weight: 400;
+  font-size: 0.8125rem;
+  line-height: 1.25rem;
+  letter-spacing: 0.03em;
+  padding-top: 1px;
+  padding-bottom: 4px;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+.black {
+  color: #0f141e;
+}
+
+//------------------------typography of project items
+.topic {
+  font-weight: 400;
+  .date {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    letter-spacing: 0.4em;
+  }
+  .name {
+    font-weight: 800;
+    letter-spacing: -0.01em;
+    line-height: 2.5rem;
+    font-size: 2rem;
+  }
+  .call-to-action {
+  }
+}
+
+// -----------Media Queries-----------
+
+//This media query is to make sure that the font size is adaptive in mobile or latop view
+@media screen and (max-width: 1200px) {
+  //133%
+  html {
+    // font-size: 4.1vmin;
+  }
+  .large {
+    font-size: 2.125rem;
+    line-height: 2.5rem;
+  }
+  h3 {
+    font-size: 1.125rem;
+    line-height: 1.5625rem;
+  }
+}
+
+//Font size for mobile views as oly making 4.1vmin is not enough at this size
+@media screen and (max-width: 768px) {
+  .large {
+    font-size: 3.875rem;
+    line-height: 4.0625rem;
+  }
+  h3 {
+    font-size: 1.125rem;
+    line-height: 1.5625rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .large {
+    font-size: 2.125rem;
+    line-height: 2.5rem;
+  }
+}

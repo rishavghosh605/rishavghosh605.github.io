@@ -1,0 +1,52 @@
+//The container margin will be changed using a media query that will check if the media query is below 600px or not
+
+$container-margin-row: 40px;
+$container-max-width: 1480px; //Thus when the screen or monitor is zoomed out like to 25% the portfolio except the navbar only covers this much not the entire page
+
+$background-color: #ffffff;
+
+html {
+  height: 100%;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  background-color: $background-color;
+  // overflow-x: hidden; //So that even though the person zooms in the screen does not increase horizontally but that will only happen if we use grid auto-fill irresposnsibly
+  min-height: 100%;
+}
+
+.container {
+  display: grid;
+  height: 100%;
+  grid-template-columns: $container-margin-row 1fr $container-margin-row;
+  grid-template-rows: max-content;
+  margin: 0 auto;
+  max-width: $container-max-width;
+
+  //To work with the navbar
+  position: relative;
+  top: 96px;
+}
+
+header {
+  grid-column: 2/-2;
+}
+
+.projects {
+  grid-column: 2/-2;
+}
+
+footer {
+  grid-column: 2/-2;
+}
+// -----------Media Queries-----------
+@media screen and (max-width: 1024px) {
+  $container-margin-row: 14px;
+  .container {
+    grid-template-columns: $container-margin-row 1fr $container-margin-row;
+  }
+}

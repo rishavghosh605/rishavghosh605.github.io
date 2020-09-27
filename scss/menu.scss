@@ -1,0 +1,46 @@
+$normal-text-color: #878a8f;
+
+.fix {
+  //To stop overflow of overlay menu
+  overflow: hidden;
+}
+
+.menu-list {
+  grid-column: 2/-2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.menu-list div {
+  color: $normal-text-color;
+  display: inline-block;
+  font-size: 3.25rem;
+  line-height: 4.0625rem;
+  letter-spacing: -0.01em;
+  font-weight: 800;
+  cursor: pointer;
+  &:hover {
+    color: white;
+  }
+}
+
+.menu-list .my-projects {
+  color: white;
+}
+
+.overlay-menu {
+  display: grid;
+  grid-template-columns: 3fr 1fr 3fr;
+  grid-template-rows: auto 50px;
+}
+
+//------------------Media Queries-----------------
+@media screen and (max-width: 768px) {
+  .menu-list div {
+    line-height: 2.1875rem;
+    font-size: 1.75rem;
+  }
+}

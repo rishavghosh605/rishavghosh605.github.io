@@ -1,0 +1,122 @@
+header {
+  display: grid;
+  grid-template-columns: 0.5fr 0.5fr;
+  grid-template-rows: 70vmin 30vmin;
+}
+
+.content {
+  grid-column: 1/-2;
+  grid-row: 1/2;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.profile-image {
+  grid-column: 2/-1;
+  grid-row: 1/-1;
+  opacity: 1;
+  img {
+    transform: translate3d(2%, -10%, 0);
+    max-width: 100%;
+  }
+}
+.scroll-down-animation {
+  grid-column: 1/-1;
+  grid-row: 2/-1;
+}
+section.home-top .scroll-to-icon {
+  width: 20px;
+  height: 30px;
+  box-shadow: inset 0 0 0 2px #0f141e;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out 0s;
+  -webkit-transform: translateY(0);
+  -ms-transform: translateY(0);
+  transform: translateY(0);
+}
+
+//---------------------------------------------//Media queries
+@media screen and (max-width: 1024px) {
+  header {
+    grid-template-columns: 1.5fr 0.5fr;
+    grid-template-rows: 200px 82px;
+  }
+  .content {
+    justify-content: start;
+  }
+  .profile-image {
+    img {
+      transform: translate3d(2%, -8%, 0);
+    }
+  }
+  .scroll-down-animation {
+    display: none;
+    margin: 30px auto 22px auto;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    grid-template-columns: 1fr;
+    grid-template-rows: max-content;
+    .content {
+      grid-column: 1/-1;
+      justify-content: end;
+      width: 58%;
+    }
+  }
+
+  .profile-image {
+    grid-column: 1/-1;
+    img {
+      max-width: 100%;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  //<30%
+  header {
+    grid-template-columns: 1fr;
+    grid-template-rows: 200px auto;
+    .content {
+      grid-column: 1/-1;
+      grid-row: 2/-1;
+      justify-content: end;
+      width: 100%;
+    }
+  }
+}
+
+@media screen and (min-width: 3000px) {
+  body {
+    //Background image when header changes
+    background-image: url("/img/bg_home.png");
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    width: 100%;
+    left: 0;
+    position: absolute;
+    background-position: center;
+  }
+  header {
+    grid-template-rows: 80vmin 20vmin;
+  }
+  .profile-image {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 5000px) {
+  header {
+    grid-template-rows: 90vmin 10vmin;
+  }
+}
+
+//------------------------------Profile-image//Not exactly required just for safety
+.off {
+  opacity: 0;
+  transition: all 0.5s linear;
+}

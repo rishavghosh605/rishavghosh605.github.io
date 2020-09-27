@@ -1,0 +1,46 @@
+html {
+  height: 100%;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  background-color: #ffffff;
+  min-height: 100%;
+}
+
+.container {
+  display: -ms-grid;
+  display: grid;
+  height: 100%;
+  -ms-grid-columns: 40px 1fr 40px;
+      grid-template-columns: 40px 1fr 40px;
+  -ms-grid-rows: max-content;
+      grid-template-rows: -webkit-max-content;
+      grid-template-rows: max-content;
+  margin: 0 auto;
+  max-width: 1480px;
+  position: relative;
+  top: 96px;
+}
+
+header {
+  grid-column: 2/-2;
+}
+
+.projects {
+  grid-column: 2/-2;
+}
+
+footer {
+  grid-column: 2/-2;
+}
+
+@media screen and (max-width: 1024px) {
+  .container {
+    -ms-grid-columns: 14px 1fr 14px;
+        grid-template-columns: 14px 1fr 14px;
+  }
+}

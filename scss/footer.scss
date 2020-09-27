@@ -1,0 +1,88 @@
+footer {
+  padding-top: 74px;
+  border-top: 1px solid #e7e8e9;
+  border-top-color: rgb(231, 232, 233);
+  border-top-style: solid;
+  border-top-width: 1px;
+  ul {
+    padding-top: 2px;
+    padding-bottom: 3px;
+    margin-top: 10px;
+
+    li {
+      list-style-type: none;
+      font-weight: 500;
+      color: #878a8f;
+    }
+  }
+
+  .info {
+    display: grid;
+    grid-template-columns: 4fr 3fr 2fr 3fr; //This calculation was according to the template I wanted to use
+    grid-template-rows: repeat(
+      2,
+      max-content
+    ); //On containing info and the other containing the logo
+  }
+  div {
+    margin: 0;
+  }
+}
+
+.contact {
+  padding-right: 40px;
+}
+.latest_projects {
+  margin-left: calc(33.33%);
+}
+.follow {
+  margin-left: calc(33.33%);
+}
+
+//This is only a stopgap I will probably recreate it with flex later so that it always stays in place and does not increase in size much when page is zoomed in
+.copyright {
+  grid-column: 1/-1;
+  display: flex;
+  margin-top: 40px;
+  padding-bottom: 95px;
+  a {
+    display: block;
+    width: 46px;
+    height: 46px;
+  }
+  .copyright-text {
+    margin: 3px 0 0 15px;
+  }
+}
+
+// -----------Media Queries-----------
+//This media query is to make my info a vertical list when seen in mobile
+//Need to make further  decsions about the best time: max-width to change the list from row to col
+@media screen and (max-width: 768px) {
+  footer {
+    padding-top: 0; //Better for mobile version
+    .info {
+      grid-template-rows: repeat(5, max-content);
+    }
+    .info > div {
+      grid-column: 1/-1;
+      margin-left: 0; //Important is required other wise latest projects and follow me are fucked
+      margin-top: 40px;
+    }
+
+    ul {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+    }
+    .contact-links {
+      flex-direction: column;
+    }
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .project-links {
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,47 @@
+.change .menu-text {
+  display: none;
+}
+
+.change .close {
+  display: block;
+  font-size: 1rem;
+}
+
+.change body {
+  overflow: hidden;
+}
+
+.change .bar1 {
+  top: 3px;
+  -webkit-transform: rotate(135deg);
+          transform: rotate(135deg);
+}
+
+.change .bar2 {
+  -webkit-transform: translateX(-15px);
+          transform: translateX(-15px);
+  opacity: 0;
+}
+
+.change .bar3 {
+  top: 3px;
+  -webkit-transform: rotate(-135deg);
+          transform: rotate(-135deg);
+}
+
+@media screen and (max-width: 1024px) {
+  .change .bar3 {
+    top: 3pxpx;
+    -webkit-transform: rotate(-135deg);
+            transform: rotate(-135deg);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .menu-text {
+    display: none;
+  }
+  .change .close {
+    display: none;
+  }
+}

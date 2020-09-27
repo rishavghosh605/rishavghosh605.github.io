@@ -1,0 +1,70 @@
+section {
+  padding-top: 100px;
+  padding-bottom: 40px;
+}
+
+.list {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(500px, 1fr))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+  grid-auto-rows: auto;
+  gap: 45px;
+  margin-top: 95px;
+}
+
+.list img {
+  width: calc( 100%);
+}
+
+.list-item {
+  margin: 0;
+  padding: 0;
+}
+
+.list-item .topic {
+  position: absolute;
+  max-width: 380px;
+  top: 50px;
+  left: 60px;
+}
+
+.list-item .topic.light {
+  color: #fff;
+}
+
+.list-item .topic.dark {
+  color: #000;
+}
+
+.list-item .topic .date {
+  padding: 5px 0;
+}
+
+.list-item .topic .name {
+  padding: 3px 0;
+}
+
+.list-item .topic .call-to-action {
+  margin-top: 10px;
+  color: #9d9d9d;
+}
+
+.list-item .topic .call-to-action .cta-arrow {
+  margin-left: 5px;
+  width: auto;
+  display: inline-block;
+}
+
+@media screen and (max-width: 768px) {
+  section {
+    padding-top: 60px;
+  }
+  .list {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .list-item .topic {
+    left: 30px;
+  }
+}
