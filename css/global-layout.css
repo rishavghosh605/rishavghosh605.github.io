@@ -3,6 +3,16 @@ html {
   scroll-behavior: smooth;
 }
 
+::-moz-selection {
+  background-color: #878a8f;
+  color: #fff;
+}
+
+::selection {
+  background-color: #878a8f;
+  color: #fff;
+}
+
 body {
   margin: 0;
   padding: 0;

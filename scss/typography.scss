@@ -1,3 +1,4 @@
+@import './stylesheet.scss';
 // ---------------Global-----------------
 $normal-text-color: #878a8f;
 $bold-text-color: #0f141e;
@@ -8,8 +9,8 @@ html {
 }
 
 body {
-  // font-family: "Helvetica Now Display DW",sans-serif;
-  font-family: "IBM Plex Sans", sans-serif;
+  font-family: "Helvetica Now Display",sans-serif;
+  // font-family: "IBM Plex Sans", sans-serif;
   font-style: normal;
   line-height: 1.5625rem;
   font-weight: 500;
@@ -24,8 +25,8 @@ h1,
 h1.large,
 h2,
 h3 {
-  // font-family: "Helvetica Now Display DW",sans-serif;
-  font-family: "IBM Plex Sans", sans-serif;
+  font-family: "Helvetica Now Display",sans-serif;
+  // font-family: "IBM Plex Sans", sans-serif;
   font-weight: 800;
   letter-spacing: -0.01em;
   color: $bold-text-color;
