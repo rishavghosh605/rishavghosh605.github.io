@@ -42,7 +42,7 @@ section.home-top .scroll-to-icon {
 @media screen and (max-width: 1024px) {
   header {
     grid-template-columns: 1.5fr 0.5fr;
-    grid-template-rows: 200px 82px;
+    grid-template-rows: 200px 100px;
   }
   .content {
     justify-content: start;
@@ -81,7 +81,7 @@ section.home-top .scroll-to-icon {
   //<30%
   header {
     grid-template-columns: 1fr;
-    grid-template-rows: 50vmin;//Needs to match my phone
+    grid-template-rows: 50vh 30vh;//Needs to match my phone
     .content {
       grid-column: 1/-1;
       grid-row: 2/-1;
@@ -103,7 +103,7 @@ section.home-top .scroll-to-icon {
     background-position: center;
   }
   header {
-    grid-template-rows: 80vmin 20vmin;
+    grid-template-rows: 80vh 20vh;
   }
   .profile-image {
     display: none;
@@ -112,7 +112,7 @@ section.home-top .scroll-to-icon {
 
 @media screen and (min-width: 5000px) {
   header {
-    grid-template-rows: 90vmin 10vmin;
+    grid-template-rows: 90vh 10vh;
   }
 }
 

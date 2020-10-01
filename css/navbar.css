@@ -83,12 +83,12 @@
 .bar3 {
   display: block;
   position: absolute;
-  width: 100%;
+  width: 22px;
   height: 3px;
   left: 0;
   background-color: #333;
-  -webkit-transition: 0.25s ease-in-out;
-  transition: 0.25s ease-in-out;
+  -webkit-transition: 0.25s ease-in-out,color 0.2s ease-in-out;
+  transition: 0.25s ease-in-out,color 0.2s ease-in-out;
 }
 
 .bar1 {
@@ -103,6 +103,14 @@
   bottom: 2px;
 }
 
+.change a .selection-logo {
+  display: none;
+}
+
+.change a .hover-logo {
+  display: block;
+}
+
 .change div {
   color: #878a8f;
 }
@@ -115,8 +123,8 @@
 }
 
 .menu:hover .menu-text {
-  -webkit-transition: color 0.3s ease-in-out;
-  transition: color 0.3s ease-in-out;
+  -webkit-transition: color 0.2s ease-in-out;
+  transition: color 0.2s ease-in-out;
   color: #878a8f;
 }
 
@@ -139,5 +147,17 @@
   .change .bar3 {
     -webkit-transform: rotate(45deg) translate(-6px, -7px);
             transform: rotate(45deg) translate(-6px, -7px);
+  }
+}
+
+@-webkit-keyframes highlightLogo {
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes highlightLogo {
+  to {
+    opacity: 1;
   }
 }

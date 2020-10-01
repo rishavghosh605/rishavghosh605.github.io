@@ -314,7 +314,7 @@ ul {
   font-size: 2rem;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1300px) {
   .large {
     font-size: 2.125rem;
     line-height: 2.5rem;

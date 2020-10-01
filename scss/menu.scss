@@ -2,7 +2,9 @@ $normal-text-color: #878a8f;
 
 .fix {
   //To stop overflow of overlay menu
-  overflow: hidden;
+  // overflow: hidden;
+  position: fixed; 
+  overflow-y: scroll;
 }
 
 .menu-list {

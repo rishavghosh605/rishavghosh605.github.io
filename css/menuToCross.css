@@ -2,13 +2,25 @@
   display: none;
 }
 
-.change .close {
-  display: block;
-  font-size: 1rem;
+.change .menu-icon .bar1,
+.change .menu-icon .bar2,
+.change .menu-icon .bar3 {
+  width: 28px;
 }
 
-.change body {
-  overflow: hidden;
+.change .close {
+  display: block;
+  font-size: 0.8125rem;
+}
+
+.change:hover .close {
+  color: white;
+}
+
+.change:hover .menu-icon .bar1,
+.change:hover .menu-icon .bar2,
+.change:hover .menu-icon .bar3 {
+  background-color: #ffffff;
 }
 
 .change .bar1 {
@@ -31,9 +43,12 @@
 
 @media screen and (max-width: 1024px) {
   .change .bar3 {
-    top: 3pxpx;
+    top: 3px;
     -webkit-transform: rotate(-135deg);
             transform: rotate(-135deg);
+  }
+  .change, .navbar {
+    background: none;
   }
 }
 

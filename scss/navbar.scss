@@ -75,12 +75,12 @@ $normal-text-color: #878a8f;
 .bar3 {
   display: block;
   position: absolute;
-  width: 100%;
+  width: 22px;
   height: 3px;
   left: 0;
   background-color: #333;
   // background-color: $normal-text-color;
-  transition: 0.25s ease-in-out;
+  transition: 0.25s ease-in-out,color 0.2s ease-in-out;
 }
 .bar1 {
   top: 3px;
@@ -95,6 +95,14 @@ $normal-text-color: #878a8f;
 }
 
 .change {
+  a{
+    .selection-logo{
+      display: none;
+    }
+    .hover-logo{
+      display: block;
+    }
+  }
   div {
     color: $normal-text-color;
     .bar1,
@@ -119,7 +127,7 @@ $normal-text-color: #878a8f;
 //On hovering on menu
 .menu:hover {
   .menu-text {
-    transition: color 0.3s ease-in-out;
+    transition: color 0.2s ease-in-out;
     color: $normal-text-color;
   }
   .menu-icon {
@@ -151,5 +159,12 @@ $normal-text-color: #878a8f;
   // }
   .change .bar3 {
     transform: rotate(45deg) translate(-6px, -7px);
+  }
+}
+
+
+@keyframes highlightLogo {
+  to {
+    opacity: 1;
   }
 }
