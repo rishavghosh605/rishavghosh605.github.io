@@ -1,0 +1,16 @@
+$container-margin-row-max: 40px;//At normal desktop view width the extra space that is given to the content to give it a centered look, when 2 cards per row is shown
+$container-margin-row-min: 14px;//This is the minimum margin which has the same functionality as the $container-margin-row-max but when cards/row is one
+$container-max-width: 1480px;//To control the display width of the main content when the wesite is zoomed out
+$background-color: #ffffff;//Background color of the main body
+$normal-text-color: #878a8f; //The text color for the general content that is displayed
+$bold-text-color: #0f141e; //The text color that is used for topic headings and special links and also for the underlines
+$relative_url:'../assets/fonts/';//The url where the fonts for Helvetica New are stored
+$section-padding-top: 100px;//The top padding for each section so as that on anchor linking stuff does not come under the navbar: that is 86px
+$section-padding-bottom: 40px;//Basically I wanted to give a gap of 140px between each section that I create but more than 100px is not required at the top thus this 40px at the bottom for that
+$list-item-size: 500px; //This size makes sure there are only 2 cards in row in default 100% that is till ~1100px , when the screen width is <1100px then the cards shown on each row becomes one
+$list-item-gap: 45px;//The gap between each card when two of them are shown on each row
+
+
+//--------------------------
+$selection-background-color: #878a8f;
+$section-color: #fff;

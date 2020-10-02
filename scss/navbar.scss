@@ -1,6 +1,3 @@
-
-//Layout and style
-$normal-text-color: #878a8f;
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -160,6 +157,12 @@ $normal-text-color: #878a8f;
   .change .bar3 {
     transform: rotate(45deg) translate(-6px, -7px);
   }
+}
+
+@media screen and (min-width: 5000px) {
+ .navbar{
+  background: rgba(255, 255, 255, 0.95);//This temporary measure is taken so that the scroll-down icon is hidden which is visible due to less content to scroll down to 
+ }
 }
 
 

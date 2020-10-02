@@ -1,12 +1,6 @@
-$padding-top: 100px;
-$padding-bottom: 40px;
-
-$list-item-size: 500px; //This size makes sure there are only 2 cards in  row in default 100% that is till ~1100px
-$list-item-gap: 45px;
-
 section {
-  padding-top: $padding-top;
-  padding-bottom: $padding-bottom;
+  padding-top: $section-padding-top;
+  padding-bottom: $section-padding-bottom;
 }
 
 .list {
