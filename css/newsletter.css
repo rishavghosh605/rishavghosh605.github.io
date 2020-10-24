@@ -63,3 +63,22 @@
   background: #fff !important;
   color: #0f141e !important;
 }
+
+@media (max-width: 768px) {
+  .newsletter .email {
+    width: 80% !important;
+    margin-bottom: 20px !important;
+  }
+  .newsletter .clear {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+            justify-content: center !important;
+  }
+  .newsletter label {
+    font-size: 1.5rem !important;
+    margin: 0 0 20px !important;
+  }
+}
