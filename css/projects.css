@@ -1,6 +1,6 @@
 section {
-  padding-top: 100px;
-  padding-bottom: 40px;
+  padding-top: 120px;
+  padding-bottom: 20px;
 }
 
 .list {
@@ -30,11 +30,11 @@ section {
 }
 
 .list-item .topic.light {
-  color: #fff;
+  color: #ffffff;
 }
 
 .list-item .topic.dark {
-  color: #000;
+  color: #000000;
 }
 
 .list-item .topic .date {

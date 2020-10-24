@@ -1,0 +1,28 @@
+So first thing each secion that
+you need to understand he has used different sizes and media queries you are better of using frs
+create your own layout start filling with details worry about background later
+for nows lets create a good responsive layout for now stop depending on damian
+create the header now
+
+Create now using grid for a normal 100% layout learn over time how better practices 
+
+//Download the google font 
+//Delete the extra code make your own animations do not depend on damian
+font size dependency and margins and padding is bad enough
+
+//Segregate the code into the correct parts like typography, main layout ,
+or header
+
+//use glob to import all the css files
+
+
+//Font sizes need to be managed for each sized screen 
+//Font size if written in vmin and stuff will also affect image sizess
+
+
+Tasks
+1. Make a chevron animations
+2. Make sure that the scetions projects come at next page
+----------------------------------------------------BUGS----------------------------------
+1. Resize back from 200% to 175% check list item
+2. when zoomed to 400% and reset it gets slighly crazy

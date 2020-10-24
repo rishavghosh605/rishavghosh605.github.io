@@ -196,7 +196,7 @@ body {
   top: 96px;
 }
 
-header, .projects, footer {
+header, section, footer {
   grid-column: 2/-2;
 }
 
@@ -251,6 +251,17 @@ h6 {
   margin-top: 20px;
 }
 
+h1 {
+  font-size: 2.75rem;
+  line-height: 3.125rem;
+  padding-top: 4px;
+  padding-bottom: 1px;
+}
+
+h1 + h5 {
+  margin-top: 30px;
+}
+
 h3 {
   font-size: 1.375rem;
   line-height: 1.875rem;
@@ -269,6 +280,12 @@ h4 {
   color: #0f141e;
 }
 
+.header-dark {
+  font-weight: 500;
+  color: #0f141e;
+  letter-spacing: normal;
+}
+
 h5 {
   font-size: 0.875rem;
   line-height: 1.25rem;
@@ -282,6 +299,10 @@ h5 {
 
 h5 + .large {
   margin-top: 15px;
+}
+
+h5 + h1 {
+  margin-top: 5px;
 }
 
 .header-light {
@@ -374,6 +395,62 @@ ul {
   }
 }
 
+.field label {
+  cursor: text;
+  font-weight: 400;
+  font-size: .8123rem;
+  line-height: 1.25rem;
+  letter-spacing: .03em;
+  padding-top: 1px;
+  padding-bottom: 4px;
+  color: #878a8f;
+}
+
+.field input, .field textarea {
+  font-family: "Helvetica Now Display",sans-serif;
+  background: #fff;
+  font-size: 1.125rem;
+  line-height: 1.875rem;
+  font-weight: 500;
+  color: #0f141e;
+  padding: 8px 0 6px 0;
+  border: 1px solid #e7e8e9;
+  border-width: 0 0 1px 0;
+}
+
+.field input::-webkit-input-placeholder, .field textarea::-webkit-input-placeholder {
+  color: #0f141e;
+  opacity: 1;
+}
+
+.field input:-ms-input-placeholder, .field textarea:-ms-input-placeholder {
+  color: #0f141e;
+  opacity: 1;
+}
+
+.field input::-ms-input-placeholder, .field textarea::-ms-input-placeholder {
+  color: #0f141e;
+  opacity: 1;
+}
+
+.field input::placeholder, .field textarea::placeholder {
+  color: #0f141e;
+  opacity: 1;
+}
+
+.form-button {
+  background: #fff;
+  font-family: "Helvetica Now Display DW",sans-serif;
+  font-size: 1.125rem;
+  font-weight: 800;
+  line-height: 1.5625rem;
+  margin-top: 10px;
+  color: #0f141e;
+  cursor: pointer;
+  padding: 0;
+  border: 0 none;
+}
+
 @media screen and (max-width: 768px) {
   .large {
     font-size: 3.875rem;
@@ -429,6 +506,7 @@ header {
   -webkit-transform: translate3d(2%, -10%, 0);
           transform: translate3d(2%, -10%, 0);
   max-width: 100%;
+  width: 100%;
 }
 
 .scroll-down-animation {
@@ -446,7 +524,7 @@ section.home-top .scroll-to-icon {
   -webkit-transition: all 0.2s ease-in-out 0s;
   transition: all 0.2s ease-in-out 0s;
   -webkit-transform: translateY(0);
-  transform: translateY(0);
+          transform: translateY(0);
 }
 
 @media screen and (max-width: 1024px) {
@@ -535,12 +613,6 @@ section.home-top .scroll-to-icon {
     -ms-grid-rows: 90vh 10vh;
         grid-template-rows: 90vh 10vh;
   }
-}
-
-.off {
-  opacity: 0;
-  -webkit-transition: all 0.5s linear;
-  transition: all 0.5s linear;
 }
 
 .navbar {
@@ -667,6 +739,10 @@ section.home-top .scroll-to-icon {
   margin: 5px 0;
 }
 
+nav.change {
+  width: calc(100% - 17px);
+}
+
 .menu:hover .menu-text {
   -webkit-transition: color 0.2s ease-in-out;
   transition: color 0.2s ease-in-out;
@@ -714,7 +790,10 @@ section.home-top .scroll-to-icon {
 }
 
 .fix {
-  position: fixed;
+  overflow: hidden;
+}
+
+.on {
   overflow-y: scroll;
 }
 
@@ -772,8 +851,8 @@ section.home-top .scroll-to-icon {
 }
 
 section {
-  padding-top: 100px;
-  padding-bottom: 40px;
+  padding-top: 120px;
+  padding-bottom: 20px;
 }
 
 .list {
@@ -803,11 +882,11 @@ section {
 }
 
 .list-item .topic.light {
-  color: #fff;
+  color: #ffffff;
 }
 
 .list-item .topic.dark {
-  color: #000;
+  color: #000000;
 }
 
 .list-item .topic .date {
@@ -839,6 +918,124 @@ section {
   }
   .list-item .topic {
     left: 30px;
+  }
+}
+
+.contact-details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100%;
+  padding-bottom: 110px;
+}
+
+.contact-details .aside {
+  width: 30%;
+}
+
+.contact-details .contact-content {
+  width: 58%;
+  margin-left: 10.33333%;
+  padding-top: 55px;
+}
+
+form {
+  margin-top: 55px;
+}
+
+.field {
+  margin-bottom: 45px;
+  display: block;
+  position: relative;
+}
+
+.field label {
+  display: block;
+}
+
+.field input, .field textarea {
+  width: 100%;
+  height: 45px;
+}
+
+.field input::-webkit-input-placeholder, .field textarea::-webkit-input-placeholder {
+  color: #0f141e;
+}
+
+.field input:-ms-input-placeholder, .field textarea:-ms-input-placeholder {
+  color: #0f141e;
+}
+
+.field input::-ms-input-placeholder, .field textarea::-ms-input-placeholder {
+  color: #0f141e;
+}
+
+.field input::placeholder, .field textarea::placeholder {
+  color: #0f141e;
+}
+
+.field textarea {
+  display: block !important;
+  height: auto !important;
+  min-height: 45px;
+  resize: none;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
+.form-button {
+  display: block;
+  width: auto;
+  height: 30px;
+}
+
+.form-button .message-box {
+  height: 20px;
+  width: 20px;
+  position: relative;
+  top: 3px;
+  left: 0;
+  margin-right: 3px;
+}
+
+.input-bottom-lines {
+  display: block;
+  height: 1px;
+  width: 0;
+  position: absolute;
+  background: #0f141e;
+  bottom: 0;
+  left: 0;
+  -webkit-transition: .25s;
+  transition: .25s;
+}
+
+input:focus, textarea:focus, select:focus {
+  outline: none;
+}
+
+@media screen and (max-width: 600px) {
+  .contact-details {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+  }
+  .contact-details .aside {
+    width: 100%;
+  }
+  .contact-details .contact-content {
+    width: 100%;
+    margin: 0;
+    padding-top: 55px;
   }
 }
 
@@ -948,6 +1145,72 @@ footer div {
         -ms-flex-direction: column;
             flex-direction: column;
   }
+}
+
+.newsletter label {
+  font-size: 2.5rem !important;
+  margin: 0 0 80px !important;
+  font-family: "PT Serif", serif !important;
+}
+
+.newsletter .email {
+  font-family: "Helvetica Now Display",sans-serif !important;
+  background: #fff !important;
+  font-size: 1.125rem !important;
+  line-height: 1.875rem !important;
+  font-weight: 500 !important;
+  color: #0f141e !important;
+  padding: 8px 0 6px 0 !important;
+  border: 1px solid #0f141e !important;
+  border-width: 0 0 1px 0 !important;
+}
+
+.newsletter .email::-webkit-input-placeholder {
+  color: #0f141e !important;
+  opacity: 1 !important;
+}
+
+.newsletter .email:-ms-input-placeholder {
+  color: #0f141e !important;
+  opacity: 1 !important;
+}
+
+.newsletter .email::-ms-input-placeholder {
+  color: #0f141e !important;
+  opacity: 1 !important;
+}
+
+.newsletter .email::placeholder {
+  color: #0f141e !important;
+  opacity: 1 !important;
+}
+
+.newsletter .button {
+  font-weight: 600 !important;
+  letter-spacing: 0.2em !important;
+  width: 150px !important;
+  height: 42px !important;
+  margin-left: 12px !important;
+  background: #0f141e !important;
+  border: 2px solid  #0f141e !important;
+  padding: 0 !important;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-align: center !important;
+      -ms-flex-align: center !important;
+          align-items: center !important;
+  -webkit-box-pack: center !important;
+      -ms-flex-pack: center !important;
+          justify-content: center !important;
+  text-transform: uppercase !important;
+  -webkit-transition: .3s ease !important;
+  transition: .3s ease !important;
+}
+
+.newsletter .button:hover {
+  background: #fff !important;
+  color: #0f141e !important;
 }
 
 .special {
@@ -1256,4 +1519,47 @@ footer div {
   -webkit-transform: translate3d(0, 0, 0);
           transform: translate3d(0, 0, 0);
   visibility: visible;
+}
+
+/* This animation helps me to fadeIn elements as and when they come into view
+    1) Using the Intersection Observer for changing classes when elements come into view
+    2) Using the fade-in-section and is-visible classes to create the fade in animation
+*/
+.lazyload {
+  opacity: 0;
+}
+
+.fadeIn {
+  -webkit-animation: fadeInView .7s;
+          animation: fadeInView .7s;
+  -webkit-animation-timing-function: cubic-bezier(0.3, 0, 0.5, 1);
+          animation-timing-function: cubic-bezier(0.3, 0, 0.5, 1);
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes fadeInView {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 30px, 0);
+            transform: translate3d(0, 30px, 0);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes fadeInView {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 30px, 0);
+            transform: translate3d(0, 30px, 0);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
 }

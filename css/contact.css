@@ -1,0 +1,117 @@
+.contact-details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100%;
+  padding-bottom: 110px;
+}
+
+.contact-details .aside {
+  width: 30%;
+}
+
+.contact-details .contact-content {
+  width: 58%;
+  margin-left: 10.33333%;
+  padding-top: 55px;
+}
+
+form {
+  margin-top: 55px;
+}
+
+.field {
+  margin-bottom: 45px;
+  display: block;
+  position: relative;
+}
+
+.field label {
+  display: block;
+}
+
+.field input, .field textarea {
+  width: 100%;
+  height: 45px;
+}
+
+.field input::-webkit-input-placeholder, .field textarea::-webkit-input-placeholder {
+  color: #0f141e;
+}
+
+.field input:-ms-input-placeholder, .field textarea:-ms-input-placeholder {
+  color: #0f141e;
+}
+
+.field input::-ms-input-placeholder, .field textarea::-ms-input-placeholder {
+  color: #0f141e;
+}
+
+.field input::placeholder, .field textarea::placeholder {
+  color: #0f141e;
+}
+
+.field textarea {
+  display: block !important;
+  height: auto !important;
+  min-height: 45px;
+  resize: none;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
+.form-button {
+  display: block;
+  width: auto;
+  height: 30px;
+}
+
+.form-button .message-box {
+  height: 20px;
+  width: 20px;
+  position: relative;
+  top: 3px;
+  left: 0;
+  margin-right: 3px;
+}
+
+.input-bottom-lines {
+  display: block;
+  height: 1px;
+  width: 0;
+  position: absolute;
+  background: #0f141e;
+  bottom: 0;
+  left: 0;
+  -webkit-transition: .25s;
+  transition: .25s;
+}
+
+input:focus, textarea:focus, select:focus {
+  outline: none;
+}
+
+@media screen and (max-width: 600px) {
+  .contact-details {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+  }
+  .contact-details .aside {
+    width: 100%;
+  }
+  .contact-details .contact-content {
+    width: 100%;
+    margin: 0;
+    padding-top: 55px;
+  }
+}

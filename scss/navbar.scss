@@ -4,8 +4,8 @@
 
   position: fixed;
   width: 100%;
-  z-index: 2;
-  height: 86px;
+  z-index: $navbar-z-index;
+  height: $navbar-height;
 }
 
 .logo,
@@ -49,8 +49,7 @@
 .menu-text {
   padding: 0;
   padding-right: 15px;
-  color: #0f141e;
-  // color: $normal-text-color;
+  color: $bold-text-color;
   text-transform: uppercase;
   font-size: 0.8125rem;
   line-height: 1.0625rem;
@@ -76,7 +75,6 @@
   height: 3px;
   left: 0;
   background-color: #333;
-  // background-color: $normal-text-color;
   transition: 0.25s ease-in-out,color 0.2s ease-in-out;
 }
 .bar1 {
@@ -111,16 +109,9 @@
   }
 }
 
-// //On hovering on cross
-// .change:hover {
-//   .menu-icon {
-//     .bar1,
-//     .bar2,
-//     .bar3 {
-//       margin: 5px 0 !important; //Because there are different rules for when we hover on hamburger menu instead of changed
-//     }
-//   }
-// }
+nav.change{//So that the fixed scroll bar can be seen
+  width: calc(100% - 17px);
+}
 //On hovering on menu
 .menu:hover {
   .menu-text {
@@ -149,11 +140,6 @@
   .menu {
     margin: 0 14px 0 0;
   }
-  // .bar1,
-  // .bar2,
-  // .bar3 {
-  //   margin: 4px 0;
-  // }
   .change .bar3 {
     transform: rotate(45deg) translate(-6px, -7px);
   }

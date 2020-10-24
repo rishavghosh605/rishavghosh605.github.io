@@ -1,3 +1,4 @@
+@import './variables.scss';
 section {
   padding-top: $section-padding-top;
   padding-bottom: $section-padding-bottom;
@@ -22,18 +23,16 @@ section {
   padding: 0;
   .topic {
     position: absolute;
-    // display: block;
     max-width: 380px;
     top: 50px;
     left: 60px;
     &.light {
-      color: #fff;
+      color: $project-text-color-light;
     }
     &.dark {
-      color: #000;
+      color: $project-text-color-dark;
     }
 
-    // z-index: 2;
     .date {
       padding: 5px 0;
     }

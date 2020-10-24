@@ -52,7 +52,7 @@ section.home-top .scroll-to-icon {
   -webkit-transition: all 0.2s ease-in-out 0s;
   transition: all 0.2s ease-in-out 0s;
   -webkit-transform: translateY(0);
-  transform: translateY(0);
+          transform: translateY(0);
 }
 
 @media screen and (max-width: 1024px) {
@@ -141,10 +141,4 @@ section.home-top .scroll-to-icon {
     -ms-grid-rows: 90vh 10vh;
         grid-template-rows: 90vh 10vh;
   }
-}
-
-.off {
-  opacity: 0;
-  -webkit-transition: all 0.5s linear;
-  transition: all 0.5s linear;
 }

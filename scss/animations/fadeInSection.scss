@@ -1,0 +1,24 @@
+/* This animation helps me to fadeIn elements as and when they come into view
+    1) Using the Intersection Observer for changing classes when elements come into view
+    2) Using the fade-in-section and is-visible classes to create the fade in animation
+*/
+.lazyload{
+  opacity: 0;
+}
+
+.fadeIn {
+  animation: fadeInView .7s;
+  animation-timing-function: cubic-bezier(.3,0,.5,1);
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeInView {
+  0% {
+    opacity: 0;
+    transform: translate3d(0,30px,0);
+  }
+  100% {
+    opacity: 1;
+    transform: translate3d(0,0,0);
+  }
+}

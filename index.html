@@ -3,27 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css"
-      rel="stylesheet"
-    />
-    <!-- <link rel="stylesheet" href="css/stylesheet.css"> -->
+    <link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="css/index.css" />
-    <!-- <link rel="stylesheet" href="css/projects.css" media="print"/> -->
-    <!-- <link rel="stylesheet" href="css/global-layout.css" />
-    <link rel="stylesheet" href="css/typography.css" />
-    <link rel="stylesheet" href="css/header.css" />
-    <link rel="stylesheet" href="css/projects.css" />
-    <link rel="stylesheet" href="css/footer.css" />
-    <link rel="stylesheet" href="css/navbar.css" />
-    <link rel="stylesheet" href="css/menu.css" />
-
-    <link rel="stylesheet" href="css/menuToCross.css" />
-    <link rel="stylesheet" href="css/scrollDown.css" />
-    <link rel="stylesheet" href="css/scrollTop.css" />
-    <link rel="stylesheet" href="css/overlayEffect.css" />
-    <link rel="stylesheet" href="css/highlightElements.css" />
-    <link rel="stylesheet" href="css/newIconCircle.css" /> -->
 
     <title>Portfolio | Rishav Ghosh - Full Stack Developer</title>
     <link rel = "icon" href =  
@@ -36,7 +17,7 @@
         <h5>Menu</h5>
         <div class="my-projects">Projects</div>
         <div class="about">About me</div>
-        <div class="contactme">Contact</div>
+        <div class="contactme"><a href="/contact.html">Contact</a></div>
         <div class="instagram">Instagram</div>
         <div class="dribbble">Dribbble</div>
         <!-- <div class="behance">Behance</div> -->
@@ -45,8 +26,8 @@
     <nav class="navbar" id="nav">
       <div class="logo" id="logo-icon">
         <a href="/" class="internal" data-page="home">
-          <img class = "selection-logo" src="./assets/svg/BigLogo.svg" alt="My Logo">
-          <img class = "hover-logo" src="./assets/svg/HoverLogo.svg" alt="My Logo">
+          <img class = "selection-logo" src="./assets/svg/BigLogo.svg" alt="My Logo"/>
+          <img class = "hover-logo" src="./assets/svg/HoverLogo.svg" alt="My Logo"/>
         </a>
       </div>
       <div class="menu" onclick="menuToCross(this)">
@@ -60,7 +41,7 @@
       </div>
     </nav>
     <div class="container">
-      <header id="top-content">
+      <header id="top-content" class="lazyload">
         <div class="content">
           <h5>Rishav Ghosh</h5>
           <h1 class="large">Backend developer and cloud enthusiast</h1>
@@ -77,7 +58,7 @@
           </nav>
         </div>
         <div class="profile-image" id="head-image">
-          <img src="img/me.png" alt="" />
+          <img src="img/b.jpeg" alt="" />
         </div>
         <div class="scroll-down-animation">
           <a href="#portfolio" class="scroll-to">
@@ -88,14 +69,14 @@
 
       <a href="#" class="scroll-up" id="scroll-up-icon"><img src="./assets/svg/ScrollUpArrow.svg" alt=""/></a>
       <section id="portfolio" class="projects">
-        <div class="content">
+        <div class="content lazyload">
           <div class="heading">
             <h5>Selected Projects</h5>
             <h1 class="large">Case Studies</h1>
             <div>Lets see</div>
           </div>
           <div class="list">
-            <div class="list-item">
+            <div class="list-item lazyload">
               <div class="overlay-img"></div>
               <div class="topic light">
                 <div class="date">2018-2019</div>
@@ -103,7 +84,7 @@
                   Basic UX — design resources for InVision Studio
                   </div>
                 <div class="call-to-action">View Case Study
-                  <img class="cta-arrow"src="./assets/svg/ThinArrow.svg" alt="Arrow">
+                  <img class="cta-arrow"src="./assets/svg/ThinArrow.svg" alt="Arrow"/>
                 </div>                                
               </div>
               <!-- New Icon -->
@@ -111,9 +92,9 @@
                 <path class="circle" d="M29 56.2602C44.0553 56.2602 56.26 44.0555 56.26 29.0002C56.26 13.945 44.0553 1.74023 29 1.74023C13.9447 1.74023 1.73999 13.945 1.73999 29.0002C1.73999 44.0555 13.9447 56.2602 29 56.2602Z" fill="black"/>
                 <path d="M21.9796 25.8385V33.6201H20.5011L16.6214 28.8955V33.6201H14.8427V25.8385H16.3324L20.201 30.563V25.8385H21.9796ZM30.1795 32.175V33.6201H24.1542V25.8385H30.035V27.2836H25.944V28.9734H29.5569V30.3741H25.944V32.175H30.1795ZM43.5988 25.8385L41.053 33.6201H39.1187L37.4068 28.3508L35.6392 33.6201H33.716L31.1592 25.8385H33.0268L34.7832 31.3079L36.6175 25.8385H38.285L40.0637 31.3523L41.8757 25.8385H43.5988Z" fill="white"/>
               </svg> 
-              <img src="img/tile_basicux.jpg" alt="" loading='lazy'/>
+              <img src="img/tile_basicux.jpg" alt=""  loading = 'lazy'/>
             </div>
-            <div class="list-item">
+            <div class="list-item lazyload">
               <div class="overlay-img"></div>
               <div class="topic light">
                 <div class="date">2017</div>
@@ -124,9 +105,9 @@
                   <img class="cta-arrow"src="./assets/svg/ThinArrow.svg" alt="Arrow">
                 </div>
               </div>
-              <img src="img/tile_lessdoing.jpg" alt="" loading='lazy'/>
+              <img src="img/tile_lessdoing.jpg" alt=""  loading = 'lazy'/>
             </div>
-            <div class="list-item">
+            <div class="list-item lazyload">
               <div class="overlay-img"></div>
               <div class="topic light">
                 <div class="date">2017</div>
@@ -135,9 +116,9 @@
                   <img class="cta-arrow"src="./assets/svg/ThinArrow.svg" alt="Arrow">
                 </div>
               </div>
-              <img src="img/tile_pmr.jpg" alt="" loading='lazy'/>
+              <img src="img/tile_pmr.jpg" alt=""  loading = 'lazy'/>
             </div>
-            <div class="list-item">
+            <div class="list-item lazyload">
               <div class="overlay-img"></div>
               <div class="topic dark">
                 <div class="date">2016-2018</div>
@@ -147,10 +128,27 @@
                   <img class="cta-arrow"src="./assets/svg/ThinArrow.svg" alt="Arrow">
                 </div>
               </div>
-              <img src="img/tile_symova.jpg" alt="" loading='lazy'/>
+              <img src="img/tile_symova.jpg" alt=""  loading = 'lazy'/>
             </div>
           </div>
         </div>
+      </section>
+      <section class="newsletter">
+        <!-- Begin Mailchimp Signup Form -->
+
+        <div id="mc_embed_signup">
+        <form action="https://gmail.us17.list-manage.com/subscribe/post?u=bbea026cc8eda560142afbaae&amp;id=b991e17d84" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+            <div id="mc_embed_signup_scroll">
+          <label for="mce-EMAIL">Subscribe for New Updates</label>
+          <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="Your email" required>
+            <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+            <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_bbea026cc8eda560142afbaae_b991e17d84" tabindex="-1" value=""></div>
+            <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+            </div>
+        </form>
+        </div>
+
+        <!--End mc_embed_signup-->
       </section>
       <footer>
         <div class="content">
@@ -251,6 +249,10 @@
         </div>
       </footer>
     </div>
+    <script
+    src="https://code.jquery.com/jquery-3.5.1.min.js"
+    integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+    crossorigin="anonymous" async></script>
     <script src="/js/main.js"></script>
   </body>
 </html>

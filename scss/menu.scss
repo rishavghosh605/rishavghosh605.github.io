@@ -1,7 +1,8 @@
 .fix {
   //To stop overflow of overlay menu
-  // overflow: hidden;
-  position: fixed; 
+  overflow: hidden;
+}
+.on{
   overflow-y: scroll;
 }
 
@@ -28,7 +29,7 @@
 }
 
 .menu-list .my-projects {
-  color: white;
+  color: white;//This color is for the page which is selected from the menu, by default projects will be selected
 }
 
 .overlay-menu {

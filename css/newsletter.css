@@ -1,0 +1,65 @@
+.newsletter label {
+  font-size: 2.5rem !important;
+  margin: 0 0 80px !important;
+  font-family: "PT Serif", serif !important;
+}
+
+.newsletter .email {
+  font-family: "Helvetica Now Display",sans-serif !important;
+  background: #fff !important;
+  font-size: 1.125rem !important;
+  line-height: 1.875rem !important;
+  font-weight: 500 !important;
+  color: #0f141e !important;
+  padding: 8px 0 6px 0 !important;
+  border: 1px solid #0f141e !important;
+  border-width: 0 0 1px 0 !important;
+}
+
+.newsletter .email::-webkit-input-placeholder {
+  color: #0f141e !important;
+  opacity: 1 !important;
+}
+
+.newsletter .email:-ms-input-placeholder {
+  color: #0f141e !important;
+  opacity: 1 !important;
+}
+
+.newsletter .email::-ms-input-placeholder {
+  color: #0f141e !important;
+  opacity: 1 !important;
+}
+
+.newsletter .email::placeholder {
+  color: #0f141e !important;
+  opacity: 1 !important;
+}
+
+.newsletter .button {
+  font-weight: 600 !important;
+  letter-spacing: 0.2em !important;
+  width: 150px !important;
+  height: 42px !important;
+  margin-left: 12px !important;
+  background: #0f141e !important;
+  border: 2px solid  #0f141e !important;
+  padding: 0 !important;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-align: center !important;
+      -ms-flex-align: center !important;
+          align-items: center !important;
+  -webkit-box-pack: center !important;
+      -ms-flex-pack: center !important;
+          justify-content: center !important;
+  text-transform: uppercase !important;
+  -webkit-transition: .3s ease !important;
+  transition: .3s ease !important;
+}
+
+.newsletter .button:hover {
+  background: #fff !important;
+  color: #0f141e !important;
+}

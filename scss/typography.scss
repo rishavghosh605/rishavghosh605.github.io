@@ -7,12 +7,10 @@ html {
 
 body {
   font-family: "Helvetica Now Display",sans-serif;
-  // font-family: "IBM Plex Sans", sans-serif;
   font-style: normal;
   line-height: 1.5625rem;
   font-weight: 500;
   letter-spacing: normal;
-  // color: #0f141e;
 }
 
 //-------------------Headings-------------------
@@ -23,7 +21,6 @@ h1.large,
 h2,
 h3 {
   font-family: "Helvetica Now Display",sans-serif;
-  // font-family: "IBM Plex Sans", sans-serif;
   font-weight: 800;
   letter-spacing: -0.01em;
   color: $bold-text-color;
@@ -49,6 +46,16 @@ h6 {
   }
 }
 
+h1{
+  font-size: 2.75rem;
+  line-height: 3.125rem;
+  padding-top: 4px;
+  padding-bottom: 1px;
+  +h5{
+    margin-top: 30px;
+  }
+}
+
 h3 {
   font-size: 1.375rem;
   line-height: 1.875rem;
@@ -66,6 +73,11 @@ h4 {
   letter-spacing: normal;
   color: $bold-text-color;
 }
+.header-dark {
+  font-weight: 500;
+  color: #0f141e;
+  letter-spacing: normal;
+}
 
 h5 {
   font-size: 0.875rem;
@@ -79,6 +91,9 @@ h5 {
 
   + .large {
     margin-top: 15px;
+  }
+  +h1{
+    margin-top: 5px;
   }
 }
 
@@ -182,6 +197,51 @@ ul {
     line-height: 1.5625rem;
   }
 }
+
+//Contact form typography
+.field{
+    label {
+      cursor: text;
+      font-weight: 400;
+      font-size: .8123rem;
+      line-height: 1.25rem;
+      letter-spacing: .03em;
+      padding-top: 1px;
+      padding-bottom: 4px;
+      color: #878a8f;
+  }
+  input, textarea {
+    font-family: "Helvetica Now Display",sans-serif;
+    background: #fff;
+    font-size: 1.125rem;
+    line-height: 1.875rem;
+    font-weight: 500;
+    color: #0f141e;
+    padding: 8px 0 6px 0;
+    border: 1px solid #e7e8e9;
+    border-width: 0 0 1px 0;
+    &::placeholder{
+        color: #0f141e;
+        opacity: 1;       
+    }
+  }
+}
+
+.form-button {
+	background: #fff;
+	font-family: "Helvetica Now Display DW",sans-serif;
+	font-size: 1.125rem;
+	font-weight: 800;
+	line-height: 1.5625rem;
+	margin-top: 10px;
+	color: #0f141e;
+	cursor: pointer;
+	padding: 0;
+	border: 0 none;
+}
+
+
+
 
 //Font size for mobile views as oly making 4.1vmin is not enough at this size
 @media screen and (max-width: 768px) {
