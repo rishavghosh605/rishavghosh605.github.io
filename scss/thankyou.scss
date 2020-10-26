@@ -1,0 +1,26 @@
+.thankyou-redirect{
+    background-color: #0f141e;
+    .card{
+        width: 400px;
+        margin: 0 auto;    
+        background-color: #ffffff;
+        padding: 24px 0 24px 24px;
+        border-radius: 10px;
+        box-shadow: 0px 1px 8px 2px #ffffff;
+    }
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    .message{
+        margin-top: 10px;
+    }
+    .site-redirect{
+        margin-top: 20px;
+    }
+    .left-arrow{
+        margin-right: 8px;
+        margin-bottom: 1px;
+    }
+}
+

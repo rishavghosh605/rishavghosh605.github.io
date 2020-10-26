@@ -2,7 +2,7 @@
     1) Using the Intersection Observer for changing classes when elements come into view
     2) Using the fade-in-section and is-visible classes to create the fade in animation
 */
-.lazyload {
+header.lazyload {
   opacity: 0;
 }
 

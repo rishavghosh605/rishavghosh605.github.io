@@ -58,7 +58,7 @@ section {
 
 @media screen and (max-width: 768px) {
   section {
-    padding-top: 90px;
+    padding-top: 60px;
   }
   .list {
     -ms-grid-columns: 1fr;

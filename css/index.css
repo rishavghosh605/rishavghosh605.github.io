@@ -544,8 +544,13 @@ section.home-top .scroll-to-icon {
             transform: translate3d(2%, -8%, 0);
   }
   .scroll-down-animation {
-    display: none;
-    margin: 30px auto 22px auto;
+    display: block;
+    visibility: hidden;
+    margin: 0;
+    height: 0;
+  }
+  .scroll-down-animation a {
+    height: 0;
   }
 }
 
@@ -576,8 +581,8 @@ section.home-top .scroll-to-icon {
   header {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
-    -ms-grid-rows: 35vh 50vh;
-        grid-template-rows: 35vh 50vh;
+    -ms-grid-rows: calc(50vh - $navbar-height) 50vh;
+        grid-template-rows: calc(50vh - $navbar-height) 50vh;
   }
   header .content {
     grid-column: 1/-1;
@@ -591,7 +596,7 @@ section.home-top .scroll-to-icon {
 
 @media screen and (min-width: 3000px) {
   body {
-    background-image: url("/img/bg_home.png");
+    background-image: url("/img/D.png");
     background-repeat: no-repeat;
     background-size: auto 100%;
     width: 100%;
@@ -600,8 +605,8 @@ section.home-top .scroll-to-icon {
     background-position: center;
   }
   header {
-    -ms-grid-rows: 80vh 20vh;
-        grid-template-rows: 80vh 20vh;
+    -ms-grid-rows: calc(80vh - $navbar-height) 20vh;
+        grid-template-rows: calc(80vh - $navbar-height) 20vh;
   }
   .profile-image {
     display: none;
@@ -610,8 +615,8 @@ section.home-top .scroll-to-icon {
 
 @media screen and (min-width: 5000px) {
   header {
-    -ms-grid-rows: 90vh 10vh;
-        grid-template-rows: 90vh 10vh;
+    -ms-grid-rows: calc(90vh - $navbar-height) 10vh;
+        grid-template-rows: calc(90vh - $navbar-height) 10vh;
   }
 }
 
@@ -910,7 +915,7 @@ section {
 
 @media screen and (max-width: 768px) {
   section {
-    padding-top: 90px;
+    padding-top: 60px;
   }
   .list {
     -ms-grid-columns: 1fr;
@@ -931,6 +936,7 @@ section {
           flex-direction: row;
   width: 100%;
   padding-bottom: 110px;
+  padding-top: 60px;
 }
 
 .contact-details .aside {
@@ -1014,8 +1020,9 @@ form {
   transition: .25s;
 }
 
-input:focus, textarea:focus, select:focus {
+input:focus, textarea:focus, select:focus, button:focus {
   outline: none;
+  border: none;
 }
 
 @media screen and (max-width: 600px) {
@@ -1028,6 +1035,7 @@ input:focus, textarea:focus, select:focus {
         -ms-flex-direction: column;
             flex-direction: column;
     width: 100%;
+    padding-top: 40px;
   }
   .contact-details .aside {
     width: 100%;
@@ -1116,7 +1124,7 @@ footer div {
   footer .info > div {
     grid-column: 1/-1;
     margin-left: 0;
-    margin-top: 40px;
+    margin-top: 60px;
   }
   footer ul {
     display: -webkit-box;
@@ -1162,6 +1170,7 @@ footer div {
   color: #0f141e !important;
   padding: 8px 0 6px 0 !important;
   border: 1px solid #0f141e !important;
+  border-radius: 0 !important;
   border-width: 0 0 1px 0 !important;
 }
 
@@ -1230,6 +1239,44 @@ footer div {
     font-size: 1.5rem !important;
     margin: 0 0 20px !important;
   }
+}
+
+.thankyou-redirect {
+  background-color: #0f141e;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.thankyou-redirect .card {
+  width: 400px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  padding: 24px 0 24px 24px;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 1px 8px 2px #ffffff;
+          box-shadow: 0px 1px 8px 2px #ffffff;
+}
+
+.thankyou-redirect .message {
+  margin-top: 10px;
+}
+
+.thankyou-redirect .site-redirect {
+  margin-top: 20px;
+}
+
+.thankyou-redirect .left-arrow {
+  margin-right: 8px;
+  margin-bottom: 1px;
 }
 
 .special {
@@ -1544,7 +1591,7 @@ footer div {
     1) Using the Intersection Observer for changing classes when elements come into view
     2) Using the fade-in-section and is-visible classes to create the fade in animation
 */
-.lazyload {
+header.lazyload {
   opacity: 0;
 }
 

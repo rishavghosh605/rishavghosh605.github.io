@@ -13,6 +13,7 @@
   color: #0f141e !important;
   padding: 8px 0 6px 0 !important;
   border: 1px solid #0f141e !important;
+  border-radius: 0 !important;
   border-width: 0 0 1px 0 !important;
 }
 

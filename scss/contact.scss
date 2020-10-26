@@ -3,6 +3,7 @@
     flex-direction: row;
     width: 100%;
     padding-bottom: 110px;
+    padding-top: 60px;
     .aside{
         width: 30%;
     }
@@ -67,8 +68,9 @@ form{
     transition: .25s;
 }
 
-input:focus, textarea:focus, select:focus{//To remove the irritating black line that covers the input area on being selcted
+input:focus, textarea:focus, select:focus, button:focus{//To remove the irritating black line that covers the input area on being selcted
     outline: none;
+    border: none;
 }
 
 @media screen and (max-width: 600px) {
@@ -76,6 +78,7 @@ input:focus, textarea:focus, select:focus{//To remove the irritating black line 
         display: flex;
         flex-direction: column;
         width: 100%;
+        padding-top: 40px;
         .aside{
             width: 100%;
         }

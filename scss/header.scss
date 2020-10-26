@@ -52,8 +52,13 @@ section.home-top .scroll-to-icon {
     }
   }
   .scroll-down-animation {
-    display: none;
-    margin: 30px auto 22px auto;
+    display: block;
+    visibility: hidden;
+    margin: 0;
+    height: 0;
+    a{
+      height: 0;
+    }
   }
 }
 
@@ -80,7 +85,7 @@ section.home-top .scroll-to-icon {
   //<30%
   header {
     grid-template-columns: 1fr;
-    grid-template-rows: 35vh 50vh;//Needs to match my phone
+    grid-template-rows: calc(50vh - $navbar-height) 50vh;//Needs to match my phone
     .content {
       grid-column: 1/-1;
       grid-row: 2/-1;
@@ -93,7 +98,7 @@ section.home-top .scroll-to-icon {
 @media screen and (min-width: 3000px) {
   body {
     //Background image when header changes
-    background-image: url("/img/bg_home.png");
+    background-image: url("/img/D.png");
     background-repeat: no-repeat;
     background-size: auto 100%;
     width: 100%;
@@ -102,7 +107,7 @@ section.home-top .scroll-to-icon {
     background-position: center;
   }
   header {
-    grid-template-rows: 80vh 20vh;
+    grid-template-rows: calc(80vh - $navbar-height) 20vh;
   }
   .profile-image {
     display: none;
@@ -111,6 +116,6 @@ section.home-top .scroll-to-icon {
 
 @media screen and (min-width: 5000px) {
   header {
-    grid-template-rows: 90vh 10vh;
+    grid-template-rows: calc(90vh - $navbar-height) 10vh;
   }
 }

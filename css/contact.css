@@ -8,6 +8,7 @@
           flex-direction: row;
   width: 100%;
   padding-bottom: 110px;
+  padding-top: 60px;
 }
 
 .contact-details .aside {
@@ -91,8 +92,9 @@ form {
   transition: .25s;
 }
 
-input:focus, textarea:focus, select:focus {
+input:focus, textarea:focus, select:focus, button:focus {
   outline: none;
+  border: none;
 }
 
 @media screen and (max-width: 600px) {
@@ -105,6 +107,7 @@ input:focus, textarea:focus, select:focus {
         -ms-flex-direction: column;
             flex-direction: column;
     width: 100%;
+    padding-top: 40px;
   }
   .contact-details .aside {
     width: 100%;
