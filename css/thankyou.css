@@ -38,9 +38,6 @@
 
 @media screen and (max-width: 500px) {
   .thankyou-redirect {
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
     padding-top: 100px;
   }
   .thankyou-redirect .card {
