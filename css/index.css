@@ -1326,9 +1326,6 @@ footer div {
 }
 
 @media screen and (max-width: 500px) {
-  .thankyou-redirect {
-    padding-top: 100px;
-  }
   .thankyou-redirect .card {
     width: 80%;
     padding-right: 24px;
