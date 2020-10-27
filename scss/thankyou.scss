@@ -26,8 +26,11 @@
 
 @media screen and (max-width: 500px) {
     .thankyou-redirect{
+        justify-content: flex-start;
+        padding-top: 100px;
         .card{
-            width: 200px;
+            width: 80%;
+            padding-right: 24px;
         }
     }
 }
