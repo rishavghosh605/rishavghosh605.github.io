@@ -35,3 +35,9 @@
   margin-right: 8px;
   margin-bottom: 1px;
 }
+
+@media screen and (max-width: 500px) {
+  .thankyou-redirect .card {
+    width: 200px;
+  }
+}

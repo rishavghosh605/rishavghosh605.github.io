@@ -1,0 +1,22 @@
+.about-image{
+    width: fit-content;
+    margin: 0 auto;
+    img{
+        max-width: 100%;
+    }
+}
+.about {
+    padding-right: 40px;
+    padding-left: 40px;
+    div{
+        text-align: center;
+        padding-top: 15px;
+    }
+    .conclusion{
+        padding-top: 25px;
+    }
+}
+
+.about-services-tools>* {
+    text-align: center;
+}

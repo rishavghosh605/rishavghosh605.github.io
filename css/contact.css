@@ -1,3 +1,11 @@
+section.top {
+  padding-top: 60px;
+}
+
+.contact-image img {
+  max-width: 100%;
+}
+
 .contact-details {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -80,24 +88,23 @@ form {
   margin-right: 3px;
 }
 
-.input-bottom-lines {
-  display: block;
-  height: 1px;
-  width: 0;
-  position: absolute;
-  background: #0f141e;
-  bottom: 0;
-  left: 0;
-  -webkit-transition: .25s;
-  transition: .25s;
-}
-
 input:focus, textarea:focus, select:focus, button:focus {
   outline: none;
+  border-color: black;
+  border-width: 100%;
+  border: 2px;
+  -webkit-transition: all .7s linear;
+  transition: all .7s linear;
+}
+
+button:focus {
   border: none;
 }
 
 @media screen and (max-width: 600px) {
+  section.top {
+    padding-top: 5px;
+  }
   .contact-details {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -108,6 +115,7 @@ input:focus, textarea:focus, select:focus, button:focus {
             flex-direction: column;
     width: 100%;
     padding-top: 40px;
+    padding-bottom: 60px;
   }
   .contact-details .aside {
     width: 100%;

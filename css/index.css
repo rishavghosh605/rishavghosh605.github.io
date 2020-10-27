@@ -200,10 +200,20 @@ header, section, footer {
   grid-column: 2/-2;
 }
 
+section.end {
+  padding-bottom: 100px;
+}
+
 @media screen and (max-width: 1024px) {
   .container {
     -ms-grid-columns: 14px 1fr 14px;
         grid-template-columns: 14px 1fr 14px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  section.end {
+    padding-bottom: 70px;
   }
 }
 
@@ -596,7 +606,7 @@ section.home-top .scroll-to-icon {
 
 @media screen and (min-width: 3000px) {
   body {
-    background-image: url("/img/D.png");
+    background-image: url("/img/e.png");
     background-repeat: no-repeat;
     background-size: auto 100%;
     width: 100%;
@@ -828,6 +838,7 @@ nav.change {
   line-height: 4.0625rem;
   letter-spacing: -0.01em;
   font-weight: 800;
+  white-space: nowrap;
   cursor: pointer;
 }
 
@@ -835,7 +846,7 @@ nav.change {
   color: white;
 }
 
-.menu-list .my-projects {
+.menu-list .active {
   color: white;
 }
 
@@ -926,6 +937,14 @@ section {
   }
 }
 
+section.top {
+  padding-top: 60px;
+}
+
+.contact-image img {
+  max-width: 100%;
+}
+
 .contact-details {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1008,24 +1027,21 @@ form {
   margin-right: 3px;
 }
 
-.input-bottom-lines {
-  display: block;
-  height: 1px;
-  width: 0;
-  position: absolute;
-  background: #0f141e;
-  bottom: 0;
-  left: 0;
-  -webkit-transition: .25s;
-  transition: .25s;
-}
-
 input:focus, textarea:focus, select:focus, button:focus {
   outline: none;
+  border-bottom: 1px solid #0f141e;
+  -webkit-transition: all .25s ease;
+  transition: all .25s ease;
+}
+
+button:focus {
   border: none;
 }
 
 @media screen and (max-width: 600px) {
+  section.top {
+    padding-top: 5px;
+  }
   .contact-details {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1036,6 +1052,7 @@ input:focus, textarea:focus, select:focus, button:focus {
             flex-direction: column;
     width: 100%;
     padding-top: 40px;
+    padding-bottom: 60px;
   }
   .contact-details .aside {
     width: 100%;
@@ -1045,6 +1062,35 @@ input:focus, textarea:focus, select:focus, button:focus {
     margin: 0;
     padding-top: 55px;
   }
+}
+
+.about-image {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.about-image img {
+  max-width: 100%;
+}
+
+.about {
+  padding-right: 40px;
+  padding-left: 40px;
+}
+
+.about div {
+  text-align: center;
+  padding-top: 15px;
+}
+
+.about .conclusion {
+  padding-top: 25px;
+}
+
+.about-services-tools > * {
+  text-align: center;
 }
 
 footer {
@@ -1277,6 +1323,12 @@ footer div {
 .thankyou-redirect .left-arrow {
   margin-right: 8px;
   margin-bottom: 1px;
+}
+
+@media screen and (max-width: 500px) {
+  .thankyou-redirect .card {
+    width: 200px;
+  }
 }
 
 .special {
