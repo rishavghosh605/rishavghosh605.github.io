@@ -223,7 +223,7 @@ html {
 }
 
 body {
-  font-family: "Helvetica Now Display",sans-serif;
+  font-family: "Helvetica Now Display", sans-serif;
   font-style: normal;
   line-height: 1.5625rem;
   font-weight: 500;
@@ -235,7 +235,7 @@ h1,
 h1.large,
 h2,
 h3 {
-  font-family: "Helvetica Now Display",sans-serif;
+  font-family: "Helvetica Now Display", sans-serif;
   font-weight: 800;
   letter-spacing: -0.01em;
   color: #0f141e;
@@ -278,6 +278,13 @@ h3 {
   padding-top: 2px;
   padding-bottom: 3px;
   letter-spacing: normal;
+}
+
+h3 em {
+  font-weight: 500;
+  color: #cfd0d2;
+  margin: 0 0.9375rem;
+  font-style: normal;
 }
 
 h4 {
@@ -408,16 +415,17 @@ ul {
 .field label {
   cursor: text;
   font-weight: 400;
-  font-size: .8123rem;
+  font-size: 0.8123rem;
   line-height: 1.25rem;
-  letter-spacing: .03em;
+  letter-spacing: 0.03em;
   padding-top: 1px;
   padding-bottom: 4px;
   color: #878a8f;
 }
 
-.field input, .field textarea {
-  font-family: "Helvetica Now Display",sans-serif;
+.field input,
+.field textarea {
+  font-family: "Helvetica Now Display", sans-serif;
   background: #fff;
   font-size: 1.125rem;
   line-height: 1.875rem;
@@ -428,29 +436,33 @@ ul {
   border-width: 0 0 1px 0;
 }
 
-.field input::-webkit-input-placeholder, .field textarea::-webkit-input-placeholder {
+.field input::-webkit-input-placeholder,
+.field textarea::-webkit-input-placeholder {
   color: #0f141e;
   opacity: 1;
 }
 
-.field input:-ms-input-placeholder, .field textarea:-ms-input-placeholder {
+.field input:-ms-input-placeholder,
+.field textarea:-ms-input-placeholder {
   color: #0f141e;
   opacity: 1;
 }
 
-.field input::-ms-input-placeholder, .field textarea::-ms-input-placeholder {
+.field input::-ms-input-placeholder,
+.field textarea::-ms-input-placeholder {
   color: #0f141e;
   opacity: 1;
 }
 
-.field input::placeholder, .field textarea::placeholder {
+.field input::placeholder,
+.field textarea::placeholder {
   color: #0f141e;
   opacity: 1;
 }
 
 .form-button {
   background: #fff;
-  font-family: "Helvetica Now Display DW",sans-serif;
+  font-family: "Helvetica Now Display DW", sans-serif;
   font-size: 1.125rem;
   font-weight: 800;
   line-height: 1.5625rem;
@@ -469,6 +481,13 @@ ul {
   h3 {
     font-size: 1.125rem;
     line-height: 1.5625rem;
+  }
+  h3 em {
+    margin: 0 0.625rem;
+  }
+  h1.text {
+    font-size: 1.75rem;
+    line-height: 2.125rem;
   }
 }
 
@@ -591,8 +610,8 @@ section.home-top .scroll-to-icon {
   header {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
-    -ms-grid-rows: calc(50vh - $navbar-height) 50vh;
-        grid-template-rows: calc(50vh - $navbar-height) 50vh;
+    -ms-grid-rows: calc(50vh - 86px) 50vh;
+        grid-template-rows: calc(50vh - 86px) 50vh;
   }
   header .content {
     grid-column: 1/-1;
@@ -615,8 +634,8 @@ section.home-top .scroll-to-icon {
     background-position: center;
   }
   header {
-    -ms-grid-rows: calc(80vh - $navbar-height) 20vh;
-        grid-template-rows: calc(80vh - $navbar-height) 20vh;
+    -ms-grid-rows: calc(80vh - 86px) 20vh;
+        grid-template-rows: calc(80vh - 86px) 20vh;
   }
   .profile-image {
     display: none;
@@ -625,8 +644,8 @@ section.home-top .scroll-to-icon {
 
 @media screen and (min-width: 5000px) {
   header {
-    -ms-grid-rows: calc(90vh - $navbar-height) 10vh;
-        grid-template-rows: calc(90vh - $navbar-height) 10vh;
+    -ms-grid-rows: calc(90vh - 86px) 10vh;
+        grid-template-rows: calc(90vh - 86px) 10vh;
   }
 }
 
@@ -982,34 +1001,40 @@ form {
   display: block;
 }
 
-.field input, .field textarea {
+.field input,
+.field textarea {
   width: 100%;
   height: 45px;
 }
 
-.field input::-webkit-input-placeholder, .field textarea::-webkit-input-placeholder {
+.field input::-webkit-input-placeholder,
+.field textarea::-webkit-input-placeholder {
   color: #0f141e;
 }
 
-.field input:-ms-input-placeholder, .field textarea:-ms-input-placeholder {
+.field input:-ms-input-placeholder,
+.field textarea:-ms-input-placeholder {
   color: #0f141e;
 }
 
-.field input::-ms-input-placeholder, .field textarea::-ms-input-placeholder {
+.field input::-ms-input-placeholder,
+.field textarea::-ms-input-placeholder {
   color: #0f141e;
 }
 
-.field input::placeholder, .field textarea::placeholder {
+.field input::placeholder,
+.field textarea::placeholder {
   color: #0f141e;
 }
 
 .field textarea {
   display: block !important;
-  height: auto !important;
   min-height: 45px;
+}
+
+.autosize {
   resize: none;
-  overflow-y: hidden;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
 .form-button {
@@ -1027,11 +1052,14 @@ form {
   margin-right: 3px;
 }
 
-input:focus, textarea:focus, select:focus, button:focus {
+input:focus,
+textarea:focus,
+select:focus,
+button:focus {
   outline: none;
   border-bottom: 1px solid #0f141e;
-  -webkit-transition: all .25s ease;
-  transition: all .25s ease;
+  -webkit-transition: all 0.25s ease;
+  transition: all 0.25s ease;
 }
 
 button:focus {
@@ -1075,11 +1103,6 @@ button:focus {
   max-width: 100%;
 }
 
-.about {
-  padding-right: 40px;
-  padding-left: 40px;
-}
-
 .about div {
   text-align: center;
   padding-top: 15px;
@@ -1089,8 +1112,31 @@ button:focus {
   padding-top: 25px;
 }
 
-.about-services-tools > * {
+.about-services-tools {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 80px;
+}
+
+.about-services-tools div {
   text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .about-services-tools div h3 {
+    font-size: 1.375rem;
+    line-height: 1.875rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .about-services-tools {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
 footer {

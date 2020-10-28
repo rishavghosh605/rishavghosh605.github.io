@@ -85,7 +85,7 @@ section.home-top .scroll-to-icon {
   //<30%
   header {
     grid-template-columns: 1fr;
-    grid-template-rows: calc(50vh - $navbar-height) 50vh;//Needs to match my phone
+    grid-template-rows: calc(50vh - 86px) 50vh;//Needs to match my phone
     .content {
       grid-column: 1/-1;
       grid-row: 2/-1;
@@ -107,7 +107,7 @@ section.home-top .scroll-to-icon {
     background-position: center;
   }
   header {
-    grid-template-rows: calc(80vh - $navbar-height) 20vh;
+    grid-template-rows: calc(80vh - 86px) 20vh;
   }
   .profile-image {
     display: none;
@@ -116,6 +116,6 @@ section.home-top .scroll-to-icon {
 
 @media screen and (min-width: 5000px) {
   header {
-    grid-template-rows: calc(90vh - $navbar-height) 10vh;
+    grid-template-rows: calc(90vh - 86px) 10vh;
   }
 }

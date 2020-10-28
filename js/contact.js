@@ -20,9 +20,4 @@ function onSubmit(token) {
 }
 
 
-i=0;
-$(document).ready(function(){
-  autosize($('textarea'));
-    });   
-
   

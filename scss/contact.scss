@@ -1,95 +1,103 @@
-section.top{padding-top: 60px;}
-
-.contact-image{
-    img{
-        max-width: 100%;
-    }
+section.top {
+  padding-top: 60px;
 }
 
-.contact-details{
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    padding-bottom: 110px;
-    padding-top: 60px;
-    .aside{
-        width: 30%;
-    }
-    .contact-content{
-        width: 58%;
-        margin-left: 10.33333%;
-        padding-top: 55px;
-    }
+.contact-image {
+  img {
+    max-width: 100%;
+  }
 }
 
-form{
-    margin-top: 55px;
+.contact-details {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  padding-bottom: 110px;
+  padding-top: 60px;
+  .aside {
+    width: 30%;
+  }
+  .contact-content {
+    width: 58%;
+    margin-left: 10.33333%;
+    padding-top: 55px;
+  }
+}
+
+form {
+  margin-top: 55px;
 }
 
 //Input fields
 .field {
-    margin-bottom: 45px;
+  margin-bottom: 45px;
+  display: block;
+  position: relative;
+  label {
     display: block;
-    position: relative;
-    label {
-        display: block;
+  }
+  input,
+  textarea {
+    width: 100%;
+    height: 45px;
+    &::placeholder {
+      color: #0f141e;
     }
-    input, textarea {
-        width: 100%;
-        height: 45px;
-        &::placeholder{
-            color: #0f141e;   
-        }
-    }
-    textarea{
-        display: block!important;
-        height: auto!important;
-        min-height: 45px;
-        resize: none;
-        overflow-y: hidden;
-        overflow-x: hidden;
-    }
+  }
+  textarea {
+    display: block !important;
+    min-height: 45px;
+  }
+}
+.autosize {
+  resize: none;
+  overflow: hidden;
 }
 
 .form-button {
-	display: block;
-	width: auto;
-    height: 30px;
-    .message-box{
-        height: 20px;
-        width: 20px;
-        position: relative;
-        top: 3px;
-        left: 0;
-        margin-right: 3px;
-    }
+  display: block;
+  width: auto;
+  height: 30px;
+  .message-box {
+    height: 20px;
+    width: 20px;
+    position: relative;
+    top: 3px;
+    left: 0;
+    margin-right: 3px;
+  }
 }
 
-input:focus, textarea:focus, select:focus, button:focus{//To remove the irritating black line that covers the input area on being selcted
-    outline: none;
-    border-bottom: 1px solid $bold-text-color;
-    transition: all .25s ease;
+input:focus,
+textarea:focus,
+select:focus,
+button:focus {
+  //To remove the irritating black line that covers the input area on being selcted
+  outline: none;
+  border-bottom: 1px solid $bold-text-color;
+  transition: all 0.25s ease;
 }
-button:focus{border: none;}
+button:focus {
+  border: none;
+}
 
 @media screen and (max-width: 600px) {
-    section.top{padding-top: 5px;}
-    .contact-details{
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        padding-top: 40px;
-        padding-bottom: 60px;
-        .aside{
-            width: 100%;
-        }
-        .contact-content{
-            width: 100%;
-            margin: 0;
-            padding-top: 55px;
-        }
+  section.top {
+    padding-top: 5px;
+  }
+  .contact-details {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-top: 40px;
+    padding-bottom: 60px;
+    .aside {
+      width: 100%;
+    }
+    .contact-content {
+      width: 100%;
+      margin: 0;
+      padding-top: 55px;
     }
   }
-
-
-  
+}
