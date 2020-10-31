@@ -595,7 +595,7 @@ section.home-top .scroll-to-icon {
     grid-column: 1/-1;
     -webkit-box-pack: end;
         -ms-flex-pack: end;
-            justify-content: end;
+            justify-content: flex-end;
     width: 58%;
   }
   .profile-image {
@@ -610,15 +610,15 @@ section.home-top .scroll-to-icon {
   header {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
-    -ms-grid-rows: calc(50vh - 86px) 50vh;
-        grid-template-rows: calc(50vh - 86px) 50vh;
+    -ms-grid-rows: calc(50vh - 86px) calc(50vh - 20px);
+        grid-template-rows: calc(50vh - 86px) calc(50vh - 20px);
   }
   header .content {
     grid-column: 1/-1;
     grid-row: 2/-1;
     -webkit-box-pack: end;
         -ms-flex-pack: end;
-            justify-content: end;
+            justify-content: flex-end;
     width: 100%;
   }
 }
@@ -634,8 +634,8 @@ section.home-top .scroll-to-icon {
     background-position: center;
   }
   header {
-    -ms-grid-rows: calc(80vh - 86px) 20vh;
-        grid-template-rows: calc(80vh - 86px) 20vh;
+    -ms-grid-rows: calc(80vh - 86px) calc(20vh -20px);
+        grid-template-rows: calc(80vh - 86px) calc(20vh -20px);
   }
   .profile-image {
     display: none;
@@ -644,8 +644,8 @@ section.home-top .scroll-to-icon {
 
 @media screen and (min-width: 5000px) {
   header {
-    -ms-grid-rows: calc(90vh - 86px) 10vh;
-        grid-template-rows: calc(90vh - 86px) 10vh;
+    -ms-grid-rows: calc(90vh - 86px) calc(10vh - 20px);
+        grid-template-rows: calc(90vh - 86px) calc(10vh - 20px);
   }
 }
 
@@ -1690,13 +1690,14 @@ footer div {
     1) Using the Intersection Observer for changing classes when elements come into view
     2) Using the fade-in-section and is-visible classes to create the fade in animation
 */
-header.lazyload {
+header.lazyload,
+.top.lazyload {
   opacity: 0;
 }
 
 .fadeIn {
-  -webkit-animation: fadeInView .7s;
-          animation: fadeInView .7s;
+  -webkit-animation: fadeInView 0.7s;
+          animation: fadeInView 0.7s;
   -webkit-animation-timing-function: cubic-bezier(0.3, 0, 0.5, 1);
           animation-timing-function: cubic-bezier(0.3, 0, 0.5, 1);
   -webkit-animation-fill-mode: forwards;

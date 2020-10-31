@@ -2,13 +2,14 @@
     1) Using the Intersection Observer for changing classes when elements come into view
     2) Using the fade-in-section and is-visible classes to create the fade in animation
 */
-header.lazyload {
+header.lazyload,
+.top.lazyload {
   opacity: 0;
 }
 
 .fadeIn {
-  -webkit-animation: fadeInView .7s;
-          animation: fadeInView .7s;
+  -webkit-animation: fadeInView 0.7s;
+          animation: fadeInView 0.7s;
   -webkit-animation-timing-function: cubic-bezier(0.3, 0, 0.5, 1);
           animation-timing-function: cubic-bezier(0.3, 0, 0.5, 1);
   -webkit-animation-fill-mode: forwards;

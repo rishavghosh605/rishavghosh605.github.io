@@ -1,23 +1,21 @@
-// //Using Intersection Observer for fadeIn animation
-const myElements = document.querySelectorAll('.lazyload');
+//Contact Form
 
-observer = new IntersectionObserver(entries => {
-  entries.forEach(entry => {
-    if (entry.intersectionRatio > 0) {
-      entry.target.classList.add('fadeIn');
-      observer.unobserve(entry.target);
-    } 
+//Message Height Resizing
+
+$(document).ready(function() {
+  var textArea = $('#content');
+  const defaultHeight= textArea.height()+'px';
+  const defaultScrollHeight= textArea.prop('scrollHeight')+'px';
+  textArea.on('input', function(){
+    this.style.height = 'auto';
+    this.style.height = 
+            (this.scrollHeight) + 'px';
+    if(this.style.height===defaultScrollHeight){this.style.height=defaultHeight;}
+    });
   });
-});
-
-myElements.forEach(element => {
-  observer.observe(element);
-});
 
 
 function onSubmit(token) {
   document.getElementById("form-contact").submit();
 }
 
-
-  

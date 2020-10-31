@@ -2,23 +2,24 @@
     1) Using the Intersection Observer for changing classes when elements come into view
     2) Using the fade-in-section and is-visible classes to create the fade in animation
 */
-header.lazyload{
+header.lazyload,
+.top.lazyload {
   opacity: 0;
 }
 
 .fadeIn {
-  animation: fadeInView .7s;
-  animation-timing-function: cubic-bezier(.3,0,.5,1);
+  animation: fadeInView 0.7s;
+  animation-timing-function: cubic-bezier(0.3, 0, 0.5, 1);
   animation-fill-mode: forwards;
 }
 
 @keyframes fadeInView {
   0% {
     opacity: 0;
-    transform: translate3d(0,30px,0);
+    transform: translate3d(0, 30px, 0);
   }
   100% {
     opacity: 1;
-    transform: translate3d(0,0,0);
+    transform: translate3d(0, 0, 0);
   }
 }

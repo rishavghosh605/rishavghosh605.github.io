@@ -1,3 +1,7 @@
+//end is for the ending scetion
+//top class is for the first sections
+
+
 So first thing each secion that
 you need to understand he has used different sizes and media queries you are better of using frs
 create your own layout start filling with details worry about background later
