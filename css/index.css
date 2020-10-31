@@ -610,8 +610,8 @@ section.home-top .scroll-to-icon {
   header {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
-    -ms-grid-rows: calc(50vh - 86px) calc(50vh - 20px);
-        grid-template-rows: calc(50vh - 86px) calc(50vh - 20px);
+    -ms-grid-rows: calc(50vh - 86px) calc(50vh - 24px);
+        grid-template-rows: calc(50vh - 86px) calc(50vh - 24px);
   }
   header .content {
     grid-column: 1/-1;
@@ -634,8 +634,8 @@ section.home-top .scroll-to-icon {
     background-position: center;
   }
   header {
-    -ms-grid-rows: calc(80vh - 86px) calc(20vh -20px);
-        grid-template-rows: calc(80vh - 86px) calc(20vh -20px);
+    -ms-grid-rows: calc(80vh - 86px) calc(20vh -24px);
+        grid-template-rows: calc(80vh - 86px) calc(20vh -24px);
   }
   .profile-image {
     display: none;
@@ -644,8 +644,8 @@ section.home-top .scroll-to-icon {
 
 @media screen and (min-width: 5000px) {
   header {
-    -ms-grid-rows: calc(90vh - 86px) calc(10vh - 20px);
-        grid-template-rows: calc(90vh - 86px) calc(10vh - 20px);
+    -ms-grid-rows: calc(90vh - 86px) calc(10vh - 24px);
+        grid-template-rows: calc(90vh - 86px) calc(10vh - 24px);
   }
 }
 
