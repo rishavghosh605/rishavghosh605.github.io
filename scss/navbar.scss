@@ -18,23 +18,21 @@
   margin: 40px 0 0 40px;
   display: flex;
   align-items: center;
-  .selection-logo{
+  .selection-logo {
     display: block;
   }
-  .hover-logo{
+  .hover-logo {
     display: none;
   }
-  &:hover{
-    
-    .selection-logo{
+  &:hover {
+    .selection-logo {
       display: none;
     }
-    .hover-logo{
+    .hover-logo {
       display: block;
     }
   }
 }
-
 
 .menu {
   margin: 40px 40px 0 0;
@@ -75,7 +73,7 @@
   height: 3px;
   left: 0;
   background-color: #333;
-  transition: 0.25s ease-in-out,color 0.2s ease-in-out;
+  transition: 0.25s ease-in-out, color 0.2s ease-in-out;
 }
 .bar1 {
   top: 3px;
@@ -90,11 +88,11 @@
 }
 
 .change {
-  a{
-    .selection-logo{
+  a {
+    .selection-logo {
       display: none;
     }
-    .hover-logo{
+    .hover-logo {
       display: block;
     }
   }
@@ -109,7 +107,8 @@
   }
 }
 
-nav.change{//So that the fixed scroll bar can be seen
+nav.change {
+  //So that the fixed scroll bar can be seen
   width: calc(100% - 17px);
 }
 //On hovering on menu
@@ -145,12 +144,23 @@ nav.change{//So that the fixed scroll bar can be seen
   }
 }
 
-@media screen and (min-width: 5000px) {
- .navbar{
-  background: rgba(255, 255, 255, 0.95);//This temporary measure is taken so that the scroll-down icon is hidden which is visible due to less content to scroll down to 
- }
+@media screen and (max-width: 768px) {
+  nav.change {
+    //As the scroll bar is not seen in the mobile view
+    width: calc(100%);
+  }
 }
 
+@media screen and (min-width: 5000px) {
+  .navbar {
+    background: rgba(
+      255,
+      255,
+      255,
+      0.95
+    ); //This temporary measure is taken so that the scroll-down icon is hidden which is visible due to less content to scroll down to
+  }
+}
 
 @keyframes highlightLogo {
   to {

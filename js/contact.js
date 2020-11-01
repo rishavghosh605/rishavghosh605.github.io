@@ -16,6 +16,8 @@ $(document).ready(function() {
 
 
 function onSubmit(token) {
+  const form = document.getElementById("form-contact");
+  console.log(form);
   document.getElementById("form-contact").submit();
 }
 

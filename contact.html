@@ -60,18 +60,19 @@
         
         <div class="contact-content">
           <h3 class="header-light">Got a project? Drop me a line if you want to work together on something       exciting. Big or small. Mobile or web.</h3>
-          <form id="form-contact" action="https://formspree.io/f/xjvpwqpk" method="POST" enctype="application/x-www-form-urlencoded" novalidate="novalidate">
+          <form id="form-contact" action="https://formspree.io/f/xjvpwqpk" method="POST" enctype="application/x-www-form-urlencoded">
             <div class="field">
               <label>Your Name</label>
-              <input type="text" value="" id="form-contact_name" name="name" placeholder="What’s your name?" required="">
+              <input type="text" value="" id="form-contact_name" name="name" placeholder="What’s your name?" required="required">
               </div>
               <div class="field">
                 <label>Your Email</label>
-                <input type="email" value="" id="form-contact_name" name="_replyto" placeholder="What’s your email?" required="">
+                <input type="email" value="" id="form-contact_name" name="_replyto" placeholder="What’s your email?" required="required">
                 </div>
                 <div class="field">
                   <label>Message</label>
-                  <textarea name="message" id="content" placeholder="What’s your message?" rows="1" required="" class="autosize txta" style="height: 44px;"></textarea>
+                  <textarea name="message" id="content" placeholder="What’s your message?" rows="1" 
+                  required="required" class="autosize"></textarea>
                 </div>
                 <button class="special form-button g-recaptcha" data-sitekey="6LfMotsZAAAAAB0dTVHqr-RS516Xzf2vwSiId6Ea" data-callback='onSubmit' data-action='submit' type="submit">
                   <img class="message-box"src="./assets/svg/MessageBox.svg" alt="Arrow"/>

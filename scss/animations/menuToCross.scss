@@ -2,22 +2,22 @@
   .menu-text {
     display: none;
   }
-  .menu-icon{
+  .menu-icon {
     .bar1,
     .bar2,
     .bar3 {
-      width: 28px;//Think of pythagoras when thinking about the reason: sqrt(22^2+22^2):30
+      width: 28px; //Think of pythagoras when thinking about the reason: sqrt(22^2+22^2):30
     }
   }
   .close {
     display: block;
     font-size: 0.8125rem;
   }
-  &:hover{
-    .close{
-    color: white;
+  &:hover {
+    .close {
+      color: white;
     }
-    .menu-icon{
+    .menu-icon {
       .bar1,
       .bar2,
       .bar3 {
@@ -33,27 +33,22 @@
 }
 
 .change .bar2 {
-  transform: translateX(-15px);
   opacity: 0;
 }
 
 .change .bar3 {
-  top:3px;
+  top: 3px;
   transform: rotate(-135deg);
 }
 
 // -----------Media Queries-----------
 @media screen and (max-width: 1024px) {
-  .change .bar3 {
-    top: 3px;
-    transform: rotate(-135deg);
-  }
-  .change,.navbar{
+  nav.change {
     background: none;
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
   .menu-text {
     display: none;
   }
